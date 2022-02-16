@@ -1,9 +1,11 @@
 const express = require('express');
 const router = express.Router();
+const services = require('../services/massageService');
 
-router.get('/', (req, res) => {
+router.get('/', async (req, res) => {
 
-    res.send('Hello Niki!!!')
+    const massages = await services.getAll();
+    res.json(massages)
 });
 
 module.exports = router;
