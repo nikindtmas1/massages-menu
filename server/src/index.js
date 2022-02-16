@@ -6,9 +6,9 @@ const routes = require('./routes/routes');
 const port = 5000;
 //app.use(express.json());
 
-app.get('/', (req, res) => {
-    res.send('hello world')
-  })
+// app.get('/', (req, res) => {
+//     res.send('hello world')
+//   })
 
 app.use(routes);
 
