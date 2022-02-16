@@ -5,7 +5,7 @@ const routes = require('./routes/routes');
 const mongooseConfige = require('./config/configMongoose');
 
 const port = 5000;
-//app.use(express.json());
+app.use(express.json());
 
 // app.get('/', (req, res) => {
 //     res.send('hello world')
