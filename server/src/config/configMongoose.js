@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const { development } = require('../config/config');
 
-const connection = development.PORT;
+const connection = development.dbAtlas;
 
 module.exports = (app) => {
 
