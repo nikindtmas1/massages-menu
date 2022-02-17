@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../Header/Header';
 import SectionPageOne from '../Sections/SectionPageOne';
+import Footer from '../Footer/Footer';
+import AsidePageOne from '../Asides/AsidePageOne';
 
 const PageOne = () => {
   return (
@@ -9,7 +11,8 @@ const PageOne = () => {
             <Header />
             <SectionPageOne />
         </div>
-        
+        <AsidePageOne />
+        <Footer />
     </div>
   )
 }
