@@ -6,7 +6,7 @@ const Navigation = () => {
     <nav className="wrapper">
       <ul className="menu">
         <li>
-          <Link className="active" to="/home">
+          <Link className="active" to="/">
             About us
           </Link>
         </li>
