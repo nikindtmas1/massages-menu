@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../Header/Header';
 import SectionPageTwo from '../Sections/SectionPageTwo';
+import Footer from '../Footer/Footer';
+import AsidePageTwo from '../Asides/AsidePageTwo';
 
 const PageTwo = () => {
   return (
@@ -9,6 +11,8 @@ const PageTwo = () => {
             <Header />
             <SectionPageTwo />
         </div>
+        <AsidePageTwo />
+        <Footer />
     </div>
   )
 }
