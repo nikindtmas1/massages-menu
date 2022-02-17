@@ -2,7 +2,7 @@
 
 function App() {
   return (
-    <div className="App">
+    <div id="page1">
       <div className="bg">
         <header>
           <div className="menu-row">
