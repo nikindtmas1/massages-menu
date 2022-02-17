@@ -1,29 +1,30 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
     <nav className="wrapper">
-    <ul className="menu">
-      <li>
-        <a className="active" href="index.html">
-          About us
-        </a>
-      </li>
-      <li>
-        <a href="services.html">Services</a>
-      </li>
-      <li>
-        <a href="therapies.html">Therapies</a>
-      </li>
-      <li>
-        <a href="staff.html">Our Staff</a>
-      </li>
-      <li className="last-item">
-        <a href="contacts.html">Contacts</a>
-      </li>
-    </ul>
-  </nav>
-  )
-}
+      <ul className="menu">
+        <li>
+          <Link className="active" to="/home">
+            About us
+          </Link>
+        </li>
+        <li>
+          <Link to="/services">Services</Link>
+        </li>
+        <li>
+          <Link to="/therapies">Therapies</Link>
+        </li>
+        <li>
+          <Link to="/staff">Our Staff</Link>
+        </li>
+        <li className="last-item">
+          <Link to="/contacts">Contacts</Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
 
-export default Navigation
+export default Navigation;
