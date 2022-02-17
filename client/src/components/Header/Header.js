@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import Navigation from '../Navigation/Navigation';
 
 const Header = () => {
@@ -11,7 +12,7 @@ const Header = () => {
                   <div className="grid_12">
                    <Navigation />
                     <h1>
-                      <a href="index.html">SpaSalon</a>
+                      <Link to="/">SpaSalon</Link>
                     </h1>
                   </div>
                 </div>
