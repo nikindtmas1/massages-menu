@@ -1,10 +1,14 @@
 //import './App.css';
 import PageOne from "./components/PageOne/PageOne";
+import {Route, Switch} from 'react-router-dom';
 
 function App() {
   return (
 
-    <PageOne />
+    <Switch>
+      <Route path='/' exact component={PageOne} />
+    </Switch>
+    
     // <div id="page1">
     //   <div className="bg">
     //     <header>
