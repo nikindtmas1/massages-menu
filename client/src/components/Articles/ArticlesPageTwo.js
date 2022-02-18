@@ -18,13 +18,13 @@ const ArticlesPageTwo = () => {
             <ul className="list-1">
               <li><Link to="/">Nailcare</Link></li>
               <li><Link to="/">Haircare</Link></li>
-              <li><Link to="/">Face Lifting</Link></li>
-              <li><Link to="/">Spa Massage</Link></li>
-              <li><Link to="/">Skin Treatments</Link></li>
-              <li><Link to="/">Body Treatments</Link></li>
+              <li><Link to="/">Face Treatments</Link></li>
+              {/* <li><Link to="/">Spa Massage</Link></li> */}
+              {/* <li><Link to="/">Skin Treatments</Link></li> */}
+              <li><Link to="/bodyMassages">Body Treatments</Link></li>
               <li><Link to="/">Waxing</Link></li>
-              <li><Link to="/">Makeup</Link></li>
-              <li><Link to="/">Massage Therapy</Link></li>
+              {/* <li><Link to="/">Makeup</Link></li> */}
+              {/* <li><Link to="/">Massage Therapy</Link></li> */}
             </ul>
           </article>
     </>
