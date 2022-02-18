@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 const AsideArticleOne = () => {
   return (
@@ -11,9 +12,9 @@ const AsideArticleOne = () => {
           It is <br />
           also XHTML &amp; CSS valid.
         </p>
-        <a className="button" href="/">
+        <Link className="button" to="/">
           Read More
-        </a>{" "}
+        </Link>{" "}
       </article>
       <article className="grid_4">
         <div className="indent-left3">
@@ -23,9 +24,9 @@ const AsideArticleOne = () => {
             files (are available for free for the registered members of
             Templates.com) and without them.
           </p>
-          <a className="button" href="/">
+          <Link className="button" to="/">
             Read More
-          </a>{" "}
+          </Link>{" "}
         </div>
       </article>
       <article className="grid_4">
@@ -33,30 +34,30 @@ const AsideArticleOne = () => {
           <h3 className="p1">Spa Rest</h3>
           <p className="indent-bot">
             This website template has several pages:{" "}
-            <a className="link" href="index.html">
+            <Link className="link" to="index.html">
               About Us
-            </a>
+            </Link>
             ,{" "}
-            <a className="link" href="services.html">
+            <Link className="link" to="services.html">
               Our Services
-            </a>
+            </Link>
             ,{" "}
-            <a className="link" href="therapies.html">
+            <Link className="link" to="therapies.html">
               Therapies
-            </a>
+            </Link>
             ,{" "}
-            <a className="link" href="staff.html">
+            <Link className="link" to="staff.html">
               Our Staff
-            </a>
+            </Link>
             ,{" "}
-            <a className="link" href="contacts.html">
+            <Link className="link" to="contacts.html">
               Contact Us
-            </a>{" "}
+            </Link>{" "}
             (please note that contact us form doesn’t work).
           </p>
-          <a className="button" href="/">
+          <Link className="button" to="/">
             Read More
-          </a>{" "}
+          </Link>{" "}
         </div>
       </article>
     </>
