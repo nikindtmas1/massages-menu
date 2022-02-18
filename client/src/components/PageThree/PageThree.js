@@ -1,18 +1,18 @@
-import React from 'react';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
-import SectionPageThree from '../Sections/SectionPageThree';
+import React from "react";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+import SectionPageThree from "../Sections/SectionPageThree";
 
 const PageThree = () => {
   return (
-    <div id='page3'>
-        <div className='bg'>
-            <Header />
-        </div>
+    <div id="page3">
+      <div className="bg">
+        <Header />
         <SectionPageThree />
-        <Footer />
+      </div>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default PageThree
+export default PageThree;
