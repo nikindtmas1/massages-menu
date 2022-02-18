@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';
 
 const ArticlesPageOne = () => {
   return (
@@ -6,20 +7,20 @@ const ArticlesPageOne = () => {
          <article className="grid_3">
                   <h3>Latest News</h3>
                   <time className="tdate-1" datetime="2011-08-22">
-                    <a href="/">22.08.2011</a>
+                    <Link to="/">22.08.2011</Link>
                   </time>
                   <p className="indent-bot2">
                     Consectetur adipisicing elit sed do eiusmod. tempor
                     incididunt.
                   </p>
                   <time className="tdate-1" datetime="2011-08-17">
-                    <a href="/">17.08.2011</a>
+                    <Link to="/">17.08.2011</Link>
                   </time>
                   <p className="indent-bot2">
                     Laboret dolore magna aliqua enim ad minim veniam.
                   </p>
                   <time className="tdate-1" datetime="2011-08-09">
-                    <a href="/">09.08.2011</a>
+                    <Link to="/">09.08.2011</Link>
                   </time>
                   Nostrud exercn ullamco laboris nisi ut aliquip ex ea commodo.{" "}
                 </article>
@@ -28,9 +29,9 @@ const ArticlesPageOne = () => {
                     <h2>Most Popular Procedures</h2>
                     <div className="wrapper border-bot indent-bot">
                       <figure className="img-indent border">
-                        <a href="/">
+                        <Link to="/">
                           <img src="images/page1-img1.jpg" alt="" />
-                        </a>
+                        </Link>
                       </figure>
                       <div className="extra-wrap">
                         <h4>Massage Therapy</h4>
@@ -40,9 +41,9 @@ const ArticlesPageOne = () => {
                     </div>
                     <div className="wrapper">
                       <figure className="img-indent border">
-                        <a href="/">
+                        <Link to="/">
                           <img src="images/page1-img2.jpg" alt="" />
-                        </a>
+                        </Link>
                       </figure>
                       <div className="extra-wrap">
                         <h4>Spa Aromatherapy</h4>
@@ -59,7 +60,7 @@ const ArticlesPageOne = () => {
                     <div className="extra-wrap">
                       {" "}
                       <strong className="text-1">
-                        <a href="/">Lorem ipsumolor</a>
+                        <Link to="/">Lorem ipsumolor</Link>
                       </strong>{" "}
                       Consectetur adipisic ing elit sed do.{" "}
                     </div>
@@ -69,7 +70,7 @@ const ArticlesPageOne = () => {
                     <div className="extra-wrap">
                       {" "}
                       <strong className="text-1">
-                        <a href="/">Tempor incididunt</a>
+                        <Link to="/">Tempor incididunt</Link>
                       </strong>{" "}
                       Laboret dolore magna aliqua enim.{" "}
                     </div>
@@ -79,7 +80,7 @@ const ArticlesPageOne = () => {
                     <div className="extra-wrap">
                       {" "}
                       <strong className="text-1">
-                        <a href="/">Minim veniam quis</a>
+                        <Link to="/">Minim veniam quis</Link>
                       </strong>{" "}
                       Nostud exercn ullmco laboris nisit aliquip.{" "}
                     </div>
