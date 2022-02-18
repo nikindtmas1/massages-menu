@@ -6,6 +6,8 @@ import PageThree from './components/PageThree/PageThree';
 import PageFour from './components/PageFour/PageFour';
 import PageFive from './components/PageFive/PageFive';
 
+import BodyMassages from './components/BodyMassages/BodyMassages';
+
 function App() {
   return (
 
@@ -15,6 +17,7 @@ function App() {
       <Route path='/therapies' component={PageThree} />
       <Route path='/staff' component={PageFour} />
       <Route path='/contacts' component={PageFive} />
+      <Route path='/bodyMassages' component={BodyMassages} />
     </Switch>
     
     // <div id="page1">
