@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 const ArticlesPageMassages = () => {
   return (
     <article className="grid_12">
-    <h3 className="p2">Therapies</h3>
+    <h3 className="p2">Body Massages</h3>
     <div className="wrapper p4">
       <div className="grid_4 alpha">
         <div className="wrapper p2">
