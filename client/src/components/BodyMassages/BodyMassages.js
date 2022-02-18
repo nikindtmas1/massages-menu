@@ -5,7 +5,7 @@ import SectionPageMassages from "../Sections/SectionPageMassages";
 
 const BodyMassages = () => {
   return (
-    <div id="page5">
+    <div id="page3">
       <div className="bg">
           <Header />
           <SectionPageMassages />
