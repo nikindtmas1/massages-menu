@@ -25,40 +25,52 @@ async function request(url, options) {
     }
 };
 
-function getOption(method = 'get',body){
-  
+function getOption(method = 'get', body) {
+
     const options = {
         method,
-        headers:{ 
+        headers: {
             //'Content-Type': 'application/json',
             //'X-Authorization': token
             //'X-Parse-Application-Id': 'L3A2gZGIu7UpTKTKwO3yTGs4QS0j6JGEeR4qKv5U',
             //'X-Parse-REST-API-Key': 'sNs8wSD5FQtaOMFoGdxg5A4pNT5EmbCtFNrHvvsX'
         }
     }
-  
-     const token = sessionStorage.getItem('authToken');
-  
+
+    const token = sessionStorage.getItem('authToken');
+
     // if (token != null) {
-                //'X-Authorization' = token
+    //'X-Authorization' = token
     //     options.headers['X-Parse-Session-Token'] = token;
     // }
-  
+
     if (body) {
         options.headers['Content-Type'] = 'application/json';
         options.headers['X-Authorization'] = token;
         options.body = JSON.stringify(body);
     }
-  
+
     return options;
-  
-  };
 
-  export async function get(url){
-    return  await request(url,getOption());
-  };
+};
 
-  export async function login(username, password) {
+export async function get(url) {
+    return await request(url, getOption());
+};
+
+export async function post(url, data) {
+    return await request(url, getOption('post', data));
+};
+
+export async function put(url, data) {
+    return await request(url, getOption('put', data));
+};
+
+export async function del(url) {
+    return await request(url, getOption('delete'));
+};
+
+export async function login(username, password) {
     const result = await post(settings.host + '/users/login', { username, password });
 
     sessionStorage.setItem('username', result.username);
@@ -67,7 +79,7 @@ function getOption(method = 'get',body){
     sessionStorage.setItem('userId', result._id);
 
     return result;
-}
+};
 
 export async function register(username, password) {
     const result = await post(settings.host + '/users/register', { username, password });
@@ -78,4 +90,4 @@ export async function register(username, password) {
     sessionStorage.setItem('userId', result._id);
 
     return result;
-}
+};
