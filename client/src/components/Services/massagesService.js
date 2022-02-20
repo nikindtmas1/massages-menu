@@ -56,4 +56,26 @@ function getOption(method = 'get',body){
 
   export async function get(url){
     return  await request(url,getOption());
-  }
+  };
+
+  export async function login(username, password) {
+    const result = await post(settings.host + '/users/login', { username, password });
+
+    sessionStorage.setItem('username', result.username);
+    sessionStorage.setItem('authToken', result.accessToken);
+    sessionStorage.setItem('refreshToken', result.refreshToken);
+    sessionStorage.setItem('userId', result._id);
+
+    return result;
+}
+
+export async function register(username, password) {
+    const result = await post(settings.host + '/users/register', { username, password });
+
+    sessionStorage.setItem('username', result.username);
+    sessionStorage.setItem('authToken', result.accessToken);
+    sessionStorage.setItem('refreshToken', result.refreshToken);
+    sessionStorage.setItem('userId', result._id);
+
+    return result;
+}
