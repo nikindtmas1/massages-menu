@@ -8,3 +8,4 @@ export async function getAll(){
     let result = Object.values(massages);
     return result;
 };
+
