@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
               <div className="grid_8">
                 <div className="footer-text">
                   <b>
-                    Copyright &copy; <a href="/">Created by</a> Nikolay Nikolaev
+                    Copyright &copy; <Link to="/">Developed by</Link> Nikolay Nikolaev
                   </b>{" "}
                   Design by{" "}
                   <a  href="http://www.templatemonster.com/">
