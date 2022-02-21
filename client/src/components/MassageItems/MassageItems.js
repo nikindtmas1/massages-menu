@@ -6,9 +6,9 @@ const MassageItems = ({massages}) => {
     console.log(massages);
   return (
     <div className="wrapper">
-     
      {massages.map(x => 
         <div className="grid_4 alpha">
+            
         <div className="indent-left3">
           <div className="wrapper p2">
             <figure className="border fleft"><img src={x.img} alt="" /></figure>
@@ -23,6 +23,8 @@ const MassageItems = ({massages}) => {
               </p>
           {/* <Link className="button" to="#">Details</Link>  */}
           </div>
+          <br />
+          <br />
       </div>
         )}
       
