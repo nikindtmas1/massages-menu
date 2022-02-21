@@ -7,20 +7,20 @@ const ArticlesPageOne = () => {
          <article className="grid_3">
                   <h3>Latest News</h3>
                   <time className="tdate-1" datetime="2011-08-22">
-                    <Link to="/">22.08.2011</Link>
+                    <Link to="/">22.08.2021</Link>
                   </time>
                   <p className="indent-bot2">
                     Consectetur adipisicing elit sed do eiusmod. tempor
                     incididunt.
                   </p>
                   <time className="tdate-1" datetime="2011-08-17">
-                    <Link to="/">17.08.2011</Link>
+                    <Link to="/">17.08.2021</Link>
                   </time>
                   <p className="indent-bot2">
                     Laboret dolore magna aliqua enim ad minim veniam.
                   </p>
                   <time className="tdate-1" datetime="2011-08-09">
-                    <Link to="/">09.08.2011</Link>
+                    <Link to="/">09.08.2021</Link>
                   </time>
                   Nostrud exercn ullamco laboris nisi ut aliquip ex ea commodo.{" "}
                 </article>
