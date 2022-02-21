@@ -16,10 +16,10 @@ const MassageItems = ({massages}) => {
           <h6 className="prev-indent-bot"><Link className="link" to="#">{x.name}</Link></h6>
           {/* <p className="indent-bot">{x.description}</p> */}
           <p className='indent-bot'>
-              <span style={{'padding':"10px","color":"blue"}}>{x.time} min</span>
+              <span style={{'padding':"10px","color":"black"}}>{x.time} min</span>
               <span>       </span>
          
-              <span style={{'padding-left':'120px', 'color':"blue"}}>{x.price} BGN</span>
+              <span style={{'padding-left':'120px', 'color':"black"}}>{x.price} BGN</span>
               </p>
           {/* <Link className="button" to="#">Details</Link>  */}
           </div>
