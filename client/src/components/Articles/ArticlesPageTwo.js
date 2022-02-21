@@ -18,7 +18,7 @@ const ArticlesPageTwo = () => {
             <ul className="list-1">
               <li><Link to="/">Nailcare</Link></li>
               <li><Link to="/">Haircare</Link></li>
-              <li><Link to="/">Face Treatments</Link></li>
+              <li><Link to="/faceCare">Face Treatments</Link></li>
               {/* <li><Link to="/">Spa Massage</Link></li> */}
               {/* <li><Link to="/">Skin Treatments</Link></li> */}
               <li><Link to="/bodyMassages">Body Treatments</Link></li>

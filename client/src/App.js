@@ -8,6 +8,7 @@ import PageFive from './components/PageFive/PageFive';
 import Register from './components/Register/Register';
 import LoginPage from './components/Login/LoginPage';
 import BodyMassages from './components/BodyMassages/BodyMassages';
+import FaceCare from './components/FaceCare/FaceCare';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path='/bodyMassages' component={BodyMassages} />
       <Route path='/register' component={Register} />
       <Route path='/login' component={LoginPage} />
+      <Route path='/faceCare' component={FaceCare} />
     </Switch>
     
     
