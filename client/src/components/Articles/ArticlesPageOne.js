@@ -7,22 +7,21 @@ const ArticlesPageOne = () => {
          <article className="grid_3">
                   <h3>Latest News</h3>
                   <time className="tdate-1" datetime="2011-08-22">
-                    <Link to="/">22.08.2021</Link>
+                    <a href="https://www.hotelcasinointernational.com/news/international-is-opening-on-april-21">18.04.2021</a>
                   </time>
                   <p className="indent-bot2">
-                    Consectetur adipisicing elit sed do eiusmod. tempor
-                    incididunt.
+                  INTERNATIONAL is opening on April 21
                   </p>
                   <time className="tdate-1" datetime="2011-08-17">
-                    <Link to="/">17.08.2021</Link>
+                    <a href="https://www.hotelcasinointernational.com/news/be-healthy">12.10.2021</a>
                   </time>
                   <p className="indent-bot2">
-                    Laboret dolore magna aliqua enim ad minim veniam.
+                  Program “Be Healthy & Stay Active with Bt Hotels Collection!”
                   </p>
                   <time className="tdate-1" datetime="2011-08-09">
-                    <Link to="/">09.08.2021</Link>
+                    <a href="https://www.hotelcasinointernational.com/news/contribution-to-a-eco-campaign">18.10.2021</a>
                   </time>
-                  Nostrud exercn ullamco laboris nisi ut aliquip ex ea commodo.{" "}
+                  Contribution to a Eco campaign.{" "}
                 </article>
                 <article className="grid_6">
                   <div className="indent-left">
