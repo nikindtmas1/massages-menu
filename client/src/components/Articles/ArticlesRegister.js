@@ -1,27 +1,47 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import {useHistory} from 'react-router-dom';
+//import { Link } from 'react-router-dom';
+import * as userService from '../Services/data';
 
 const ArticlesRegister = () => {
-  return (
-    <article className="grid_8">
-      <h3 className="p2">Register Form</h3>
-      <form id="contact-form" action="#" method="post" enctype="multipart/form-data">
-        <fieldset>
-          <label><span className="text-form">Username:</span>
-            <input name="p1" type="text" />
-          </label>
-          <label><span className="text-form">Password:</span>
-            <input name="p2" type="text" />
-          </label>
-          <div className="wrapper">
-            <div className="extra-wrap">
-              <div className="buttons"> <Link className="button" to="#">Register</Link> </div>
-            </div>
-          </div>
-        </fieldset>
-      </form>
-    </article>
-  )
-}
+  const history = useHistory();
 
-export default ArticlesRegister
+  const onSubmit = (e) => {
+    e.preventDefault();
+    let formData = new FormData(e.currentTarget);
+    let username = formData.get("username").trim();
+    let password = formData.get("password").trim();
+
+    if (username === "" || password === "") {
+      return alert("All fields are required!");
+    }
+
+    if (username.length < 3) {
+      return alert("Username input is invalid!");
+    }
+
+    userService.register(username, password)
+    .then(history.push('/login'))
+    .catch(error => {
+      alert(error.message)
+      throw(error)
+    })
+  };
+
+  return (
+    <>
+      <article className="grid_8">
+        <h3 className="p2">Register Form</h3>
+      </article>
+      <form onSubmit={onSubmit}>
+        <input name="username" type="text" placeholder="Username" />
+        <br />
+        <input name="password" type="text" placeholder="Password" />
+        <br />
+        <input type="submit"></input>
+      </form>
+    </>
+  );
+};
+
+export default ArticlesRegister;
