@@ -13,14 +13,8 @@ const ArticlesRegister = () => {
           <label><span className="text-form">Password:</span>
             <input name="p2" type="text" />
           </label>
-          {/* <label><span className="text-form">Subject:</span>
-                  <input name="p3" type="text" />
-                </label> */}
           <div className="wrapper">
-            {/* <div className="text-form">Your Message:</div> */}
             <div className="extra-wrap">
-              {/* <textarea></textarea>
-                    <div className="clear"></div> */}
               <div className="buttons"> <Link className="button" to="#">Register</Link> </div>
             </div>
           </div>
