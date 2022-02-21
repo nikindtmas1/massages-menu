@@ -17,7 +17,7 @@ useEffect(() => {
     <article className="grid_12">
     <h3 className="p2">Body Massages</h3>
     <div className="wrapper p4">
-      <div className="grid_4 alpha">
+      {/* <div className="grid_4 alpha">
         <div className="wrapper p2">
           <figure className="border fleft"><img src="images/page3-img1.jpg" alt="" /></figure>
         </div>
@@ -41,7 +41,7 @@ useEffect(() => {
           <h6 className="prev-indent-bot"><Link className="link" to="#">Lorem ipsum dolor sit amet</Link></h6>
           <p className="indent-bot">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
           <Link className="button" to="#">Details</Link> </div>
-      </div>
+      </div> */}
     </div>
     <MassageItems massages={massages}/>
   </article>
