@@ -1,7 +1,17 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 
+import * as services from '../Services/data';
+
 const ArticlesPageMassages = () => {
+
+const [massages, setMassages] = useState([]);
+
+useEffect(() => {
+  services.getAll()
+  .then((result) => console.log(result))
+},[]);
+
   return (
     <article className="grid_12">
     <h3 className="p2">Body Massages</h3>
