@@ -26,7 +26,7 @@ const ArticlesPageOne = () => {
                 </article>
                 <article className="grid_6">
                   <div className="indent-left">
-                    <h2>Most Popular Procedures</h2>
+                    <h2>Most Popular Offers</h2>
                     <div className="wrapper border-bot indent-bot">
                       <figure className="img-indent border">
                         <Link to="/">
@@ -34,7 +34,7 @@ const ArticlesPageOne = () => {
                         </Link>
                       </figure>
                       <div className="extra-wrap">
-                        <h4>Massage Therapy</h4>
+                        <h4>Spa Brunch</h4>
                         Consectetur adipcing elsed eiusmod tempor incidint
                         utabore dolore magna aliquat enim ad minim.{" "}
                       </div>
@@ -46,7 +46,7 @@ const ArticlesPageOne = () => {
                         </Link>
                       </figure>
                       <div className="extra-wrap">
-                        <h4>Spa Aromatherapy</h4>
+                        <h4>Spa Gurme</h4>
                         Consectetur adipcing elsed eiusmod tempor incidint
                         utabore dolore magna aliquat enim ad minim.{" "}
                       </div>
