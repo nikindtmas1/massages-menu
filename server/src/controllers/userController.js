@@ -8,7 +8,7 @@ const service = require("../services/userService");
 // });
 
 router.post("/register", async (req, res) => {
-  console.log(req.body);
+  
   let { username, password } = req.body;
   try {
     let user = await service.register({ username, password });
