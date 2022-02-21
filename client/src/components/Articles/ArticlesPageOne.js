@@ -60,7 +60,7 @@ const ArticlesPageOne = () => {
                     <div className="extra-wrap">
                       {" "}
                       <strong className="text-1">
-                        <Link to="/">Lorem ipsumolor</Link>
+                        <Link to="/">Face Care</Link>
                       </strong>{" "}
                       Consectetur adipisic ing elit sed do.{" "}
                     </div>
@@ -70,7 +70,7 @@ const ArticlesPageOne = () => {
                     <div className="extra-wrap">
                       {" "}
                       <strong className="text-1">
-                        <Link to="/">Tempor incididunt</Link>
+                        <Link to="/bodyMassages">Body Massages</Link>
                       </strong>{" "}
                       Laboret dolore magna aliqua enim.{" "}
                     </div>
@@ -80,7 +80,7 @@ const ArticlesPageOne = () => {
                     <div className="extra-wrap">
                       {" "}
                       <strong className="text-1">
-                        <Link to="/">Minim veniam quis</Link>
+                        <Link to="/">Waxing</Link>
                       </strong>{" "}
                       Nostud exercn ullmco laboris nisit aliquip.{" "}
                     </div>
