@@ -171,10 +171,10 @@ header {
 }
 .menu li a {
 	display:block;
-	width:188px;
-	font-size:28px;
+	width:122px;
+	font-size:20px;
 	line-height:2em;
-	font-weight:400;
+	font-weight:350;
 	padding:31px 0 26px 0;
 	margin:0 0 4px 0;
 	color:#151515;
@@ -224,27 +224,27 @@ h1 a {
 	padding:0 0 52px 0
 }
 h2 {
-	font-size:41px;
+	font-size:33px;
 	line-height:1.219em;
 	margin:0 0 18px 0;
 	color:#151515;
-	font-weight:300;
+	font-weight:360;
 	letter-spacing:-1px
 }
 h3 {
-	font-size:35px;
+	font-size:28px;
 	line-height:1.514em;
 	margin:0 0 17px 0;
 	color:#151515;
-	font-weight:300;
+	font-weight:360;
 	letter-spacing:-1px
 }
 h4 {
-	font-size:28px;
+	font-size:22px;
 	line-height:1.214em;
 	margin:0 0 6px 0;
 	color:#0dc2ce;
-	font-weight:300;
+	font-weight:360;
 	letter-spacing:-1px
 }
 .border-bot {
@@ -254,7 +254,7 @@ h4 {
 }
 .button {
 	display:inline-block;
-	font-size:19px;
+	font-size:16px;
 	line-height:1.21em;
 	font-weight:400;
 	text-transform:uppercase;
