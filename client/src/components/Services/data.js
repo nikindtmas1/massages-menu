@@ -3,6 +3,9 @@ import * as service from '../Services/massagesService';
 const host = 'http://localhost:5000';
 service.settings.host = host;
 
+export const login = service.login;
+export const register = service.register;
+
 export async function getAll(){
     let massages = await service.get(host + '/massages');
     let result = Object.values(massages);
