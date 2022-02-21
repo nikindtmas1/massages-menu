@@ -5,7 +5,7 @@ const AsideArticleOne = () => {
   return (
     <>
       <article className="grid_4">
-        <h3 className="p1">Skin Care</h3>
+        <h3 className="p1">Face Care</h3>
         <p className="indent-bot">
           <strong>SpaSalon</strong> is one of free website templates created by
           TemplateMonster.com team, opti mized for 1024X768 screen resolution.
@@ -24,7 +24,7 @@ const AsideArticleOne = () => {
             files (are available for free for the registered members of
             Templates.com) and without them.
           </p>
-          <Link className="button" to="/">
+          <Link className="button" to="/bodyMassages">
             Read More
           </Link>{" "}
         </div>
