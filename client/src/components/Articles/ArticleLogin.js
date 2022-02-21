@@ -21,7 +21,7 @@ const ArticleLogin = () => {
                         <div className="extra-wrap">
                             {/* <textarea></textarea>
                     <div className="clear"></div> */}
-                            <div className="buttons"> <Link className="button" to="#">Register</Link> </div>
+                            <div className="buttons"> <Link className="button" to="#">Login</Link> </div>
                         </div>
                     </div>
                 </fieldset>
