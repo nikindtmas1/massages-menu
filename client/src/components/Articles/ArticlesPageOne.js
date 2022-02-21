@@ -29,9 +29,9 @@ const ArticlesPageOne = () => {
                     <h2>Most Popular Offers</h2>
                     <div className="wrapper border-bot indent-bot">
                       <figure className="img-indent border">
-                        <Link to="/">
+                        <a href="https://www.hotelcasinointernational.com/bg/offer/spa-brunch">
                           <img src="images/page1-img1.jpg" alt="" />
-                        </Link>
+                        </a>
                       </figure>
                       <div className="extra-wrap">
                         <h4>Spa Brunch</h4>
@@ -41,12 +41,12 @@ const ArticlesPageOne = () => {
                     </div>
                     <div className="wrapper">
                       <figure className="img-indent border">
-                        <Link to="/">
+                        <a href="https://www.hotelcasinointernational.com/offer/spa-gourmet">
                           <img src="images/page1-img2.jpg" alt="" />
-                        </Link>
+                        </a>
                       </figure>
                       <div className="extra-wrap">
-                        <h4>Spa Gurme</h4>
+                        <h4>Spa Guormet</h4>
                         Consectetur adipcing elsed eiusmod tempor incidint
                         utabore dolore magna aliquat enim ad minim.{" "}
                       </div>
