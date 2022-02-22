@@ -3,9 +3,9 @@ import {Link} from 'react-router-dom';
 
 const FaceItems = ({faceCare}) => {
   return (
-    <div className='wrapper'>
-    {faceCare.map(x => 
-    <div className='grid_4 alpha'>
+      <div className='wrapper'>
+      {faceCare.map(x => 
+          <div className='grid_4 alpha'>
          <div className="listing">
          <div className="the-images">
              <img src={x.img} />
@@ -16,16 +16,15 @@ const FaceItems = ({faceCare}) => {
                  <h5 >{x.time} min</h5>
                  <h6>{x.price} BGN</h6>
              </div>
-            
          </div>
          </div>
          <br />
-          <br />
+         <br />
          </div>
          
-        )}
+         )}
+         </div>
  
-    </div>
   )
 }
 
