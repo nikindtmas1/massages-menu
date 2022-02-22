@@ -487,5 +487,9 @@ footer {
 }
 
 .data-info h6 {
-	padding-left: 50px;
+	padding-left: 40px;
+}
+
+.listing h5 {
+	padding-left: 5px;
 }
