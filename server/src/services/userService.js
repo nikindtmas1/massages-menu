@@ -14,7 +14,7 @@ exports.login = async ({username, password}) => {
 
         user.refreshToken = refreshToken;
 
-        user.save();
+       await user.save();
 
        return { user, accessToken, refreshToken };
     }else{
