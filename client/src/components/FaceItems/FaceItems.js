@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';
 
-const FaceItems = () => {
+const FaceItems = ({faceCare}) => {
   return (
     <div className='wrapper'>
     {/* map */}
@@ -8,7 +9,7 @@ const FaceItems = () => {
     <div className="preview">
         <img src='images/page3-img5.jpg' />
     </div>
-    {/* <h5>type: name:</h5> */}
+    <Link to='/'><h5>name: Lifting</h5></Link>
     <div className="info">
         <div className="data-info" >
             <h5 >Time: 50 minute</h5>
