@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../Header/Header';
 import SectionFacePage from '../Sections/SectionFacePage';
+import Footer from '../Footer/Footer';
 
 const FaceCare = () => {
   return (
@@ -9,6 +10,7 @@ const FaceCare = () => {
             <Header />
             <SectionFacePage />
         </div>
+        <Footer />
     </div>
   )
 }
