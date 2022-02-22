@@ -27,4 +27,19 @@ router.post("/register", async (req, res) => {
   }
 });
 
+router.post('/login', async (req, res) => {
+  let { username, password } = req.body;
+
+  console.log(username, password);
+  let { user, accessToken, refreshToken } = await service.login({ username, password });
+
+  res.json({
+      _id: user._id,
+      username: user.username,
+      accessToken,
+      refreshToken,
+  });
+});
+
 module.exports = router;
+
