@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import * as services from '../Services/data';
 
 import FaceItems from '../FaceItems/FaceItems';
 
@@ -7,7 +8,8 @@ const ArticlesFacePage = () => {
     const [faceCare, setFaceCare] = useState([]);
 
     useEffect(() => {
-        
+        services.getAllFaces()
+        .then((result) => setFaceCare(result))
     },[]);
 
   return (
