@@ -7,7 +7,7 @@ const FaceItems = ({faceCare}) => {
     {faceCare.map(x => 
     <div className='grid_4 alpha'>
          <div className="listing">
-         <div className="preview">
+         <div className="the-images">
              <img src={x.img} />
          </div>
          <Link to='/'><h5>{x.name}</h5></Link>
@@ -19,9 +19,12 @@ const FaceItems = ({faceCare}) => {
             
          </div>
          </div>
+         <br />
+          <br />
          </div>
+         
         )}
-   
+ 
     </div>
   )
 }

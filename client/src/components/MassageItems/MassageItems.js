@@ -11,7 +11,7 @@ const MassageItems = ({massages}) => {
             
         <div className="indent-left3">
           <div className="wrapper p2">
-            <figure className="border fleft"><img src={x.img} alt="" /></figure>
+            <figure className="the-images"><img src={x.img} alt="" /></figure>
           </div>
           <h6 className="prev-indent-bot"><Link className="link" to="#">{x.name}</Link></h6>
           {/* <p className="indent-bot">{x.description}</p> */}

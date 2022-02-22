@@ -493,3 +493,13 @@ footer {
 .listing h5 {
 	padding-left: 5px;
 }
+
+.the-images {
+	/* This is where magic happens */
+	max-width: 100%;
+	height: 100%;
+	width: auto;
+  
+	display: block;
+	margin: 0 auto;
+  }
