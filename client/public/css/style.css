@@ -453,3 +453,29 @@ footer {
 .list-services li a.item-4 {
 	background-position:-75px 0
 }
+
+#login-form input {
+	float:inherit;
+	width:326px;
+	font-size:20px;
+	line-height:1.23em;
+	color:#4f4f4f;
+	padding:4px 10px;
+	margin:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	/* border:1px solid #e5e5e5; */
+	/* background:none */
+}
+
+#register-form input {
+	float:inherit;
+	width:326px;
+	font-size:20px;
+	line-height:1.23em;
+	color:#4f4f4f;
+	padding:4px 10px;
+	margin:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	/* border:1px solid #e5e5e5; */
+	/* background:none */
+}
