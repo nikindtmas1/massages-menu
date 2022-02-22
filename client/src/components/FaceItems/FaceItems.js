@@ -16,7 +16,7 @@ const FaceItems = () => {
         </div>
        
     </div>
-</div>
+    </div>
     </div>
   )
 }
