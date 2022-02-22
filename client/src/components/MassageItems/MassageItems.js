@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 const MassageItems = ({massages}) => {
 
-    console.log(massages);
+    
   return (
     <div className="wrapper">
      {massages.map(x => 
