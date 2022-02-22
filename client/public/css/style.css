@@ -479,3 +479,13 @@ footer {
 	/* border:1px solid #e5e5e5; */
 	/* background:none */
 }
+
+.data-info {
+	display:flex;
+	padding: 10px;
+	
+}
+
+.data-info h6 {
+	padding-left: 50px;
+}
