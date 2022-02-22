@@ -4,11 +4,10 @@ import ArticlesPageMassages from '../Articles/ArticlesPageMassages';
 const SectionPageMassages = () => {
   return (
     <section id="content">
-    <div class="main">
-      <div class="container_12">
-        <div class="wrapper">
+    <div className="main">
+      <div className="container_12">
+        <div className="wrapper">
             <ArticlesPageMassages />
-         {/* <ArticlesPageThree /> */}
         </div>
       </div>
     </div>
