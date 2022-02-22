@@ -12,7 +12,7 @@ const FaceItems = () => {
     <div className="info">
         <div className="data-info" >
             <h5 >Time: 50 minute</h5>
-            <h5>Price: 180 BGN</h5>
+            <h6>Price: 180 BGN</h6>
         </div>
        
     </div>
