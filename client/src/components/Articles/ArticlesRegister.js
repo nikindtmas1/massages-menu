@@ -33,7 +33,7 @@ const ArticlesRegister = () => {
       <article className="grid_8">
         <h3 className="p2">Register Form</h3>
       </article>
-      <form id="register-form" onSubmit={onSubmit}>
+      <form id="register-form" onSubmit={onSubmit} method='POST'>
         <input name="username" type="text" placeholder="Username" />
         <br />
         <input name="password" type="text" placeholder="Password" />
