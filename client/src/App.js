@@ -1,4 +1,8 @@
+import {useState, useEffect} from 'react';
 import {Route, Switch} from 'react-router-dom';
+import AuthCxt from './contexts/AuthCxt';
+
+import * as userServices from './components/Services/authService';
 
 import PageOne from "./components/PageOne/PageOne";
 import PageTwo from './components/PageTwo/PageTwo';
@@ -11,8 +15,45 @@ import BodyMassages from './components/BodyMassages/BodyMassages';
 import FaceCare from './components/FaceCare/FaceCare';
 
 function App() {
-  return (
 
+  const [userInfo, setUserInfo] = useState({ isAuthenticated: false, username: '', userId: '' });
+  
+  useEffect(() => {
+    let userData = userServices.getUser();
+    let user = userData.username;
+    let id = userData.userId;
+
+
+    setUserInfo({
+      isAuthenticated: Boolean(user),
+      user: user,
+      userId: id,
+    })
+  }, []);
+
+
+  const onLogin = (userData) => {
+
+    let user = userData.username;
+    let id = userData._id;
+    setUserInfo({
+      user: user,
+      isAuthenticated: true,
+      userId: id,
+    })
+  };
+
+  const onLogout = () => {
+    setUserInfo({
+      isAuthenticated: false,
+      user: null,
+      userId: null
+    })
+
+  };
+
+  return (
+    <AuthCxt.Provider value={{ user: userInfo, onLogin }}>
     <Switch>
       <Route path='/' exact component={PageOne} />
       <Route path='/services' component={PageTwo} />
@@ -24,8 +65,7 @@ function App() {
       <Route path='/login' component={LoginPage} />
       <Route path='/faceCare' component={FaceCare} />
     </Switch>
-    
-    
+    </AuthCxt.Provider>
   );
 }
 
