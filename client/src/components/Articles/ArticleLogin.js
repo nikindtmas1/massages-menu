@@ -1,11 +1,14 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {useHistory} from 'react-router-dom';
 import * as userService from '../Services/data';
 
+import AuthCxt from '../../contexts/AuthCxt';
 //import {Link} from 'react-router-dom';
 
 const ArticleLogin = () => {
 
+  const {onLogin} = useContext(AuthCxt);
+  
     let history = useHistory();
 
     const onSubmit = (e) => {
@@ -23,9 +26,9 @@ const ArticleLogin = () => {
         }
     
         userService.login(username, password)
-            // .then(logData => {
-            //     onLogin(logData);
-            // })
+            .then(logData => {
+              onLogin(logData);
+            })
             .catch(error => console.log(error))
             history.push('/');
       };
