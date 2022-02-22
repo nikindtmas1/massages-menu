@@ -4,9 +4,9 @@ import ArticlesRegister from '../Articles/ArticlesRegister';
 const SectionRegister = () => {
   return (
     <section id="content">
-    <div class="main">
-      <div class="container_12">
-        <div class="wrapper">
+    <div className="main">
+      <div className="container_12">
+        <div className="wrapper">
         <ArticlesRegister />
         </div>
       </div>

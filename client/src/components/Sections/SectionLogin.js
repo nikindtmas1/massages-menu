@@ -4,9 +4,9 @@ import ArticleLogin from '../Articles/ArticleLogin';
 const SectionLogin = () => {
   return (
     <section id="content">
-    <div class="main">
-      <div class="container_12">
-        <div class="wrapper">
+    <div className="main">
+      <div className="container_12">
+        <div className="wrapper">
        <ArticleLogin />
         </div>
       </div>
