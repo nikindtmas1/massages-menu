@@ -12,3 +12,9 @@ export async function getAll(){
     return result;
 };
 
+
+export async function getAllFaces(){
+    let faces = await service.get(host + '/faces');
+    let result = Object.values(faces);
+    return result;
+};
