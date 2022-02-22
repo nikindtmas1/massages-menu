@@ -34,7 +34,7 @@ const ArticleLogin = () => {
         <article className="grid_8">
           <h3 className="p2">Login Form</h3>
         </article>
-        <form onSubmit={onSubmit}>
+        <form id='login-form' onSubmit={onSubmit}>
           <input name="username" type="text" placeholder="Username" />
           <br />
           <input name="password" type="text" placeholder="Password" />
