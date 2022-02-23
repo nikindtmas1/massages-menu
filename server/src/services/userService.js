@@ -5,8 +5,8 @@ exports.register = ({username, password}) => User.create({username, password});
 
 
 exports.login = async ({username, password}) => {
-    let user = await User.find({username, password});
-
+    //let user = await User.find({username, password});
+    let user = await User.findOne({username, password});
     if(user){
 
         let accessToken = jwt.sign({_id: user._id, username: user.username}, 'MOGYSHTSECRET', { expiresIn: '1m' });
