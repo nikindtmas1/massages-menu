@@ -12,7 +12,7 @@ const AsideArticleOne = () => {
           It is <br />
           also XHTML &amp; CSS valid.
         </p>
-        <Link className="button" to="/">
+        <Link className="button" to="/faceCare">
           Read More
         </Link>{" "}
       </article>
