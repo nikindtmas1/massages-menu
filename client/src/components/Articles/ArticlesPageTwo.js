@@ -16,8 +16,8 @@ const ArticlesPageTwo = () => {
           <article className="grid_3">
             <h3 className="p2">Services List</h3>
             <ul className="list-1">
-              <li><Link to="/">Nailcare</Link></li>
-              <li><Link to="/">Haircare</Link></li>
+              <li><Link to="/nailCare">Nailcare</Link></li>
+              <li><Link to="/hairCare">Haircare</Link></li>
               <li><Link to="/faceCare">Face Treatments</Link></li>
               {/* <li><Link to="/">Spa Massage</Link></li> */}
               {/* <li><Link to="/">Skin Treatments</Link></li> */}
