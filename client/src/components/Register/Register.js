@@ -1,5 +1,5 @@
-import { useHistory, Link } from 'react-router-dom';
-import * as userService from '../Services/data';
+import { useHistory } from 'react-router-dom';
+
 
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
