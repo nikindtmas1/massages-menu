@@ -79,7 +79,7 @@ const ArticlesPageOne = () => {
                     <div className="extra-wrap">
                       {" "}
                       <strong className="text-1">
-                        <Link to="/">Waxing</Link>
+                        <Link to="/waxing">Waxing</Link>
                       </strong>{" "}
                       Nostud exercn ullmco laboris nisit aliquip.{" "}
                     </div>
