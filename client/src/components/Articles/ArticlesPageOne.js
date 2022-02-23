@@ -59,7 +59,7 @@ const ArticlesPageOne = () => {
                     <div className="extra-wrap">
                       {" "}
                       <strong className="text-1">
-                        <Link to="/">Face Care</Link>
+                        <Link to="/faceCare">Face Care</Link>
                       </strong>{" "}
                       Consectetur adipisic ing elit sed do.{" "}
                     </div>
