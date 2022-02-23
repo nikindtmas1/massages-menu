@@ -34,8 +34,7 @@ const ArticlesPageOne = () => {
                       </figure>
                       <div className="extra-wrap">
                         <h4>Spa Brunch</h4>
-                        Consectetur adipcing elsed eiusmod tempor incidint
-                        utabore dolore magna aliquat enim ad minim.{" "}
+                        Our suggestion for the Week-End days is refreshing and relaxing SPA holiday. Our team has prepared special SPA Offers
                       </div>
                     </div>
                     <div className="wrapper">
@@ -46,8 +45,7 @@ const ArticlesPageOne = () => {
                       </figure>
                       <div className="extra-wrap">
                         <h4>Spa Guormet</h4>
-                        Consectetur adipcing elsed eiusmod tempor incidint
-                        utabore dolore magna aliquat enim ad minim.{" "}
+                        Our suggestion for the Winter days is refreshing and relaxing SPA holiday. Our team has prepared special SPA therapies
                       </div>
                     </div>
                   </div>
@@ -61,7 +59,7 @@ const ArticlesPageOne = () => {
                       <strong className="text-1">
                         <Link to="/faceCare">Face Care</Link>
                       </strong>{" "}
-                      Consectetur adipisic ing elit sed do.{" "}
+                      Pamper yourself with a range of beauty.
                     </div>
                   </div>
                   <div className="wrapper indent-bot2">
@@ -71,7 +69,7 @@ const ArticlesPageOne = () => {
                       <strong className="text-1">
                         <Link to="/bodyMassages">Body Massages</Link>
                       </strong>{" "}
-                      Laboret dolore magna aliqua enim.{" "}
+                      Full-body massage good body condition.
                     </div>
                   </div>
                   <div className="wrapper">
@@ -81,7 +79,7 @@ const ArticlesPageOne = () => {
                       <strong className="text-1">
                         <Link to="/waxing">Waxing</Link>
                       </strong>{" "}
-                      Nostud exercn ullmco laboris nisit aliquip.{" "}
+                      Make you look and feel your best.{" "}
                     </div>
                   </div>
                 </article>

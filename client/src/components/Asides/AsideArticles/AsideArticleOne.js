@@ -7,10 +7,7 @@ const AsideArticleOne = () => {
       <article className="grid_4">
         <h3 className="p1">Face Care</h3>
         <p className="indent-bot">
-          <strong>SpaSalon</strong> is one of free website templates created by
-          TemplateMonster.com team, opti mized for 1024X768 screen resolution.
-          It is <br />
-          also XHTML &amp; CSS valid.
+          <strong>Health&Relax</strong> Visit our stylish salon facilities and pamper yourself with a range of beauty treatments designed to make you look and feel your best.
         </p>
         <Link className="button" to="/faceCare">
           Read More
@@ -20,9 +17,9 @@ const AsideArticleOne = () => {
         <div className="indent-left3">
           <h3 className="p1">Massage</h3>
           <p className="indent-bot">
-            This SpaSalon Template goes with two pack ages – with PSD source
-            files (are available for free for the registered members of
-            Templates.com) and without them.
+          Full-body massage, which aims to improve blood circulation, metabolism and the overall physical body condition.
+          <br />
+          <br />
           </p>
           <Link className="button" to="/bodyMassages">
             Read More
@@ -33,10 +30,7 @@ const AsideArticleOne = () => {
         <div className="indent-left2">
           <h3 className="p1">Spa Rest</h3>
           <p className="indent-bot">
-          This SpaSalon Template goes with two pack ages – with PSD source
-            files (are available for free for the registered members of
-            Templates.com) and without them.
-         
+Your 5-star vacation is waiting for you. Start the day with a cup of aromatic coffee or your favourite tea, delicious breakfast, and the best sea view in Golden Sands!
           </p>
           <a className="button" href="https://www.hotelcasinointernational.com/offer/hot-summer-offer">
             Read More
