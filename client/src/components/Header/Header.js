@@ -12,7 +12,7 @@ const Header = () => {
                   <div className="grid_12">
                    <Navigation />
                     <h1>
-                      <Link to="/">SpaSalon</Link>
+                      <Link to="/"></Link>
                     </h1>
                   </div>
                 </div>
