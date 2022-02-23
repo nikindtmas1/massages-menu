@@ -6,7 +6,7 @@ import AuthCxt from '../../contexts/AuthCxt';
 const Navigation = () => {
 
   let value = useContext(AuthCxt);
-  //let user = value.user.user;
+  let user = value.user.user;
   let isAuth = value.user.isAuthenticated;
 
   let guestNav = (
@@ -39,7 +39,7 @@ const Navigation = () => {
   );
 
   let userNav = (
-
+    <>
     <ul className="menu">
     <li>
       <Link  to="/">About us</Link>
@@ -58,14 +58,16 @@ const Navigation = () => {
     </li>
     {/* <li >
       <Link to="/register">Register</Link>
-    </li>
-    <li >
+      </li>
+      <li >
       <Link to="/login">Login</Link>
     </li> */}
     <li >
       <Link to="/logout">Logout</Link>
     </li>
   </ul>
+    <span style={{"margin": "20px", "padding": "20px", "display": "flex"}}>Welcome: {user}</span>
+    </>
   );
 
   return (
