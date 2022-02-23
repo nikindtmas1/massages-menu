@@ -91,3 +91,14 @@ export async function register(username, password) {
 
     return result;
 };
+
+export async function logout(token) {
+    const result = await get(settings.host + '/users/logout');
+
+    sessionStorage.removeItem('username');
+    sessionStorage.removeItem('authToken');
+    sessionStorage.removeItem('refreshToken');
+    sessionStorage.removeItem('userId');
+
+    return result;
+}
