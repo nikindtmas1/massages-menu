@@ -14,6 +14,7 @@ import LoginPage from './components/Login/LoginPage';
 import BodyMassages from './components/BodyMassages/BodyMassages';
 import FaceCare from './components/FaceCare/FaceCare';
 import Logout from './components/Logout/Logout';
+import Waxing from './components/Waxing/Waxing';
 
 function App() {
 
@@ -66,6 +67,7 @@ function App() {
       <Route path='/login' component={LoginPage} />
       <Route path='/faceCare' component={FaceCare} />
       <Route path='/logout' component={Logout} />
+      <Route path='/waxing' component={Waxing} />
     </Switch>
     </AuthCxt.Provider>
   );
