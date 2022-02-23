@@ -22,7 +22,7 @@ const ArticlesPageTwo = () => {
               {/* <li><Link to="/">Spa Massage</Link></li> */}
               {/* <li><Link to="/">Skin Treatments</Link></li> */}
               <li><Link to="/bodyMassages">Body Treatments</Link></li>
-              <li><Link to="/">Waxing</Link></li>
+              <li><Link to="/waxing">Waxing</Link></li>
               {/* <li><Link to="/">Makeup</Link></li> */}
               {/* <li><Link to="/">Massage Therapy</Link></li> */}
             </ul>
