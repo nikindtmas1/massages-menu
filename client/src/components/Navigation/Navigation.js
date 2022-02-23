@@ -1,32 +1,79 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Link } from "react-router-dom";
+import AuthCxt from '../../contexts/AuthCxt';
+
 
 const Navigation = () => {
+
+  let value = useContext(AuthCxt);
+  //let user = value.user.user;
+  let isAuth = value.user.isAuthenticated;
+
+  let guestNav = (
+    <ul className="menu">
+    <li>
+      <Link  to="/">About us</Link>
+    </li>
+    <li>
+      <Link to="/services">Services</Link>
+    </li>
+    <li>
+      <Link to="/therapies">Therapies</Link>
+    </li>
+    {/* <li>
+      <Link to="/staff">Our Staff</Link>
+    </li>
+    <li>
+      <Link to="/contacts">Contacts</Link>
+    </li> */}
+    <li >
+      <Link to="/register">Register</Link>
+    </li>
+    <li >
+      <Link to="/login">Login</Link>
+    </li>
+    {/* <li >
+      <Link to="/logout">Logout</Link>
+    </li> */}
+  </ul>
+  );
+
+  let userNav = (
+
+    <ul className="menu">
+    <li>
+      <Link  to="/">About us</Link>
+    </li>
+    <li>
+      <Link to="/services">Services</Link>
+    </li>
+    <li>
+      <Link to="/therapies">Therapies</Link>
+    </li>
+    <li>
+      <Link to="/staff">Our Staff</Link>
+    </li>
+    <li>
+      <Link to="/contacts">Contacts</Link>
+    </li>
+    {/* <li >
+      <Link to="/register">Register</Link>
+    </li>
+    <li >
+      <Link to="/login">Login</Link>
+    </li> */}
+    <li >
+      <Link to="/logout">Logout</Link>
+    </li>
+  </ul>
+  );
+
   return (
     <nav className="wrapper">
-      <ul className="menu">
-        <li>
-          <Link  to="/">About us</Link>
-        </li>
-        <li>
-          <Link to="/services">Services</Link>
-        </li>
-        <li>
-          <Link to="/therapies">Therapies</Link>
-        </li>
-        <li>
-          <Link to="/staff">Our Staff</Link>
-        </li>
-        <li>
-          <Link to="/contacts">Contacts</Link>
-        </li>
-        <li >
-          <Link to="/register">Register</Link>
-        </li>
-        <li className="last-item">
-          <Link to="/login">Login</Link>
-        </li>
-      </ul>
+      {isAuth
+      ? userNav
+      : guestNav
+      }
     </nav>
   );
 };
