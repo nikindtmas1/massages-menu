@@ -13,6 +13,7 @@ import Register from './components/Register/Register';
 import LoginPage from './components/Login/LoginPage';
 import BodyMassages from './components/BodyMassages/BodyMassages';
 import FaceCare from './components/FaceCare/FaceCare';
+import Logout from './components/Logout/Logout';
 
 function App() {
 
@@ -53,7 +54,7 @@ function App() {
   };
 
   return (
-    <AuthCxt.Provider value={{ user: userInfo, onLogin }}>
+    <AuthCxt.Provider value={{ user: userInfo, onLogin, onLogout }}>
     <Switch>
       <Route path='/' exact component={PageOne} />
       <Route path='/services' component={PageTwo} />
@@ -64,6 +65,7 @@ function App() {
       <Route path='/register' component={Register} />
       <Route path='/login' component={LoginPage} />
       <Route path='/faceCare' component={FaceCare} />
+      <Route path='/logout' component={Logout} />
     </Switch>
     </AuthCxt.Provider>
   );
