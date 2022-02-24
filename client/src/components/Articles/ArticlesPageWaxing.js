@@ -11,7 +11,7 @@ const ArticlesPageWaxing = () => {
     const [waxTherapies, setWaxTherapies] = useState([]);
 
     useEffect(() => {
-        services.getAll()
+        services.getAllWaxing()
         .then((result) => setWaxTherapies(result))
     },[]);
 
