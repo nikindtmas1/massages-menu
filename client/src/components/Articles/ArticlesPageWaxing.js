@@ -17,9 +17,9 @@ const ArticlesPageWaxing = () => {
 
   return (
       <>
-    {/* <article className="grid_12"> */}
+    <article className="grid_12">
     <h3 className="p2">Waxing Therapies</h3>
-    {/* <div className="wrapper p4"> */}
+    <div className="wrapper p4">
     {waxTherapies.map(x => 
          <Card className={classes.root}>
          <CardMedia className={classes.media} image={x.img} title={x.name} />
@@ -29,7 +29,7 @@ const ArticlesPageWaxing = () => {
                      {x.name}
                  </Typography>
                  <Typography variant='h6'>
-                    {x.time} min    {x.price} BGN
+                    {x.time} min  {x.price} BGN
                  </Typography>
              </div>
              {/* <Typography dangerouslySetInnerHTML={{ __html: product.description }} variant='body2' color='textSecondary' /> */}
@@ -45,9 +45,9 @@ const ArticlesPageWaxing = () => {
         
         )}
   
-    {/* </div> */}
+    </div>
 
-    {/* </article> */}
+    </article>
 </>
   )
 }
