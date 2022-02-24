@@ -23,7 +23,8 @@ export async function getAllFaces(){
 
 
 export async function getAllWaxing(){
-    let waxing = await service.get(host + '/waxing');
+    let waxing = await service.get(host + '/waxings');
+    console.log(waxing);
     let result = Object.values(waxing);
     return result;
 }
