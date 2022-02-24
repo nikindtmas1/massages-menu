@@ -20,3 +20,10 @@ export async function getAllFaces(){
     let result = Object.values(faces);
     return result;
 };
+
+
+export async function getAllWaxing(){
+    let waxing = await service.get(host + '/waxing');
+    let result = Object.values(waxing);
+    return result;
+}
