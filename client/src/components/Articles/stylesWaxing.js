@@ -6,8 +6,8 @@ export default makeStyles(() => ({
         //display: 'block'
     },
     media: {
-        height: '260px',
-        width: '400px',
+        height: '160px',
+        width: '200px',
         display: 'center',
         paddingLeft: '80px'
         //paddingTop: '56.25%'
