@@ -5,8 +5,8 @@ const service = require('../services/waxingService');
 
 router.get('/', async (req, res) => {
 
-    const waxing = await service.getAllWaxing();
-    res.json(waxing)
+    const waxings = await service.getAllWaxing();
+    res.json(waxings)
 });
 
 module.exports = router;
