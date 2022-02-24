@@ -9,6 +9,6 @@ const waxingController = require('../controllers/waxingController');
 router.use('/users', userController);
 router.use('/massages', massagesController);
 router.use('/faces', facesController);
-router.use('/waxing', waxingController);
+router.use('/waxings', waxingController);
 
 module.exports = router;
