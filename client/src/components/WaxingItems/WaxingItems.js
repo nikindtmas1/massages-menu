@@ -1,6 +1,9 @@
 import React from 'react'
-import { Card, CardMedia, CardContent, Typography } from '@material-ui/core'; 
+import { Card, CardMedia, CardContent, Typography, IconButton, CardActions } from '@material-ui/core'; 
 import useStyles from '../Articles/stylesWaxing';
+// import {AddShoppingCart} from '@material-ui/icons';
+
+//import {ThumbUpAltIcon} from '@material-ui/icons';
 
 const WaxingItems = ({waxTherapy}) => {
 
@@ -16,16 +19,16 @@ const WaxingItems = ({waxTherapy}) => {
                     {waxTherapy.name}
                 </Typography>
                 <Typography variant='h6'>
-                   {waxTherapy.time} min  {waxTherapy.price} BGN
+                   {waxTherapy.time} min {" "} -  {waxTherapy.price} BGN
                 </Typography>
             </div>
-            {/* <Typography dangerouslySetInnerHTML={{ __html: product.description }} variant='body2' color='textSecondary' /> */}
+            {/* <Typography dangerouslySetInnerHTML={{ __html: waxTherapy.description }} variant='body2' color='textSecondary' /> */}
         </CardContent>
-        {/* <CardActions disableSpacing className={classes.cardActions} >
-            <IconButton aria-label='Add to Cart' onClick={() => onAddToCart(product.id, 1)}>
-                <AddShoppingCart  />
+        <CardActions disableSpacing className={classes.cardActions} >
+            <IconButton aria-label='Add to Cart'>
+                {/* <DeleteIcon  /> */}
             </IconButton>
-        </CardActions> */}
+        </CardActions>
         <br />
         <br />
         </Card>
