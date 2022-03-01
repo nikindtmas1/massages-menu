@@ -1,13 +1,23 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Card, CardMedia, CardContent, Typography, IconButton, CardActions } from '@material-ui/core'; 
 import useStyles from '../Articles/stylesWaxing';
-// import {AddShoppingCart} from '@material-ui/icons';
+import {ThumbUpAlt} from '@material-ui/icons';
 
-//import {ThumbUpAltIcon} from '@material-ui/icons';
+
+
 
 const WaxingItems = ({waxTherapy}) => {
 
     const classes = useStyles();
+
+    const [likes, setLikes] = useState(0);
+
+    const onClick = () => {
+        const currentLikes = likes;
+        setLikes(() => currentLikes + 1);
+    }
+
+
 
   return (
       
@@ -25,8 +35,10 @@ const WaxingItems = ({waxTherapy}) => {
             {/* <Typography dangerouslySetInnerHTML={{ __html: waxTherapy.description }} variant='body2' color='textSecondary' /> */}
         </CardContent>
         <CardActions disableSpacing className={classes.cardActions} >
-            <IconButton aria-label='Add to Cart'>
-                {/* <DeleteIcon  /> */}
+            <IconButton aria-label='Add to Cart' onClick={onClick}>
+            
+                <ThumbUpAlt />
+                
             </IconButton>
         </CardActions>
         <br />
