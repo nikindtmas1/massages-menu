@@ -10,12 +10,14 @@ const ArticlesPageWaxing = () => {
     const classes = useStyles();
 
     const [waxTherapies, setWaxTherapies] = useState([]);
+   
 
     useEffect(() => {
         services.getAllWaxing()
         .then((result) => setWaxTherapies(result))
     },[]);
 
+ 
   return (
       <>
     <article className="grid_12">
