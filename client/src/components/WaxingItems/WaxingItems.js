@@ -10,11 +10,11 @@ const WaxingItems = ({ waxTherapy }) => {
 
     const classes = useStyles();
 
-    const [likes, setLikes] = useState(0);
+    const [counter, setCounter] = useState(0);
 
     const onClick = () => {
-        const currentLikes = likes;
-        setLikes(() => currentLikes + 1);
+        const currentLikes = counter;
+        setCounter(() => currentLikes + 1);
     }
 
 
@@ -38,7 +38,7 @@ const WaxingItems = ({ waxTherapy }) => {
             <CardActions disableSpacing className={classes.cardActions} >
                 <div className={classes.cardContent}>
                     <Typography variant='h6'>
-                        Likes: {likes}
+                        Likes: {counter}
                     </Typography>
                 </div>
 
