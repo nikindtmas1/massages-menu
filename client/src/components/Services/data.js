@@ -26,4 +26,14 @@ export async function getAllWaxing(){
     let waxing = await service.get(host + '/waxings');
     let result = Object.values(waxing);
     return result;
-}
+};
+
+export async function getOneWaxing(id){
+    let result = await service.get(host + `/waxings/${id}`);
+    return result;
+};
+
+export async function editWaxing(id, data){
+    const response = await service.put(host + `/waxings/${id}`, data);
+    return response
+};
