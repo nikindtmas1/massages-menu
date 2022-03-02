@@ -12,8 +12,6 @@ const WaxingItems = ({ waxTherapy }) => {
     const value = useContext(AuthContext);
 
     const user = value.user.user;
-
-    console.log(user);
     
     const classes = useStyles();
 
