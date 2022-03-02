@@ -9,4 +9,11 @@ router.get('/', async (req, res) => {
     res.json(waxings)
 });
 
+router.get('/:id', async (req, res) => {
+
+    let result = await service.getOne(req.params.id);
+ 
+    res.json(result);
+ });
+
 module.exports = router;
