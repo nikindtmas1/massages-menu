@@ -12,11 +12,18 @@ const WaxingItems = ({ waxTherapy }) => {
     const classes = useStyles();
 
     const [counter, setCounter] = useState(waxTherapy.likes);
+    const [count, setCount] = useState(0);
 
     const onClick = () => {
-        const currentLikes = counter;
-        setCounter(() => currentLikes + 1);
-    }
+
+        if(count < 1){
+
+            const currentLikes = counter;
+            setCounter(() => currentLikes + 1);
+            setCount(() => count + 1);
+        };
+       
+    };
 
 
 
@@ -43,7 +50,7 @@ const WaxingItems = ({ waxTherapy }) => {
                     </Typography>
                 </div>
 
-                <IconButton aria-label='Add to Cart' onClick={onClick}>
+                <IconButton  onClick={onClick}>
 
                     <ThumbUpAlt />
 
