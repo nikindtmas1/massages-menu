@@ -8,9 +8,10 @@ import { ThumbUpAlt } from '@material-ui/icons';
 
 const WaxingItems = ({ waxTherapy }) => {
 
+    
     const classes = useStyles();
 
-    const [counter, setCounter] = useState(0);
+    const [counter, setCounter] = useState(waxTherapy.likes);
 
     const onClick = () => {
         const currentLikes = counter;
