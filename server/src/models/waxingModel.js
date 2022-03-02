@@ -6,7 +6,8 @@ const waxingSchema = new mongoose.Schema({
     type: String,
     time: String,
     price: String,
-    description: String
+    description: String,
+    likes: Number
 });
 
 module.exports = mongoose.model('Waxing', waxingSchema);
