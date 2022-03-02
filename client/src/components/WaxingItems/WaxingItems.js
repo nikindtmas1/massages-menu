@@ -1,13 +1,19 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react';
 import { Card, CardMedia, CardContent, Typography, IconButton, CardActions } from '@material-ui/core';
 import useStyles from '../Articles/stylesWaxing';
 import { ThumbUpAlt } from '@material-ui/icons';
+import AuthContext from '../../contexts/AuthCxt';
 
 
 
 
 const WaxingItems = ({ waxTherapy }) => {
 
+    const value = useContext(AuthContext);
+
+    const user = value.user.user;
+
+    console.log(user);
     
     const classes = useStyles();
 
@@ -16,12 +22,17 @@ const WaxingItems = ({ waxTherapy }) => {
 
     const onClick = () => {
 
-        if(count < 1){
+        if(user){
 
-            const currentLikes = counter;
-            setCounter(() => currentLikes + 1);
-            setCount(() => count + 1);
+            if(count < 1){
+
+                const currentLikes = counter;
+                setCounter(() => currentLikes + 1);
+                setCount(() => count + 1);
+            };
+
         };
+      
        
     };
 
