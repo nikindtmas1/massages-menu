@@ -11,9 +11,15 @@ router.get('/', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
 
-    let result = await service.getOne(req.params.id);
- 
+    let result = await service.getOneWax(req.params.id);
     res.json(result);
  });
+
+ router.put('/:id', async (req, res) => {
+  
+    await service.updateWax(req.params.id, req.body);
+
+    res.json({ok: true});
+});
 
 module.exports = router;
