@@ -1,17 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Typography, IconButton } from '@material-ui/core';
 import { ThumbUpAlt } from '@material-ui/icons';
 
+import AuthCxt from '../../contexts/AuthCxt';
+
 
 const MassageItems = ({ massage }) => {
 
+  const value = useContext(AuthCxt);
+  const user = value.user.user;
+
   const [counter, setCounter] = useState(0);
+  const [count, setCount] = useState(0);
 
   const onClick = () => {
 
-    let currentLikes = counter + 1;
-    setCounter(currentLikes);
+    if (user) {
+      if (count < 1) {
+        let currentLikes = counter;
+        setCounter(() => currentLikes + 1);
+        setCount(() => count + 1);
+      }
+    }
 
   }
 
