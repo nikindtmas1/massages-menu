@@ -22,9 +22,9 @@ Due to the COVID-19 situation, some of the SPA procedures might be temporary not
               <li><Link to="/nailCare">Nailcare</Link></li>
               <li><Link to="/hairCare">Haircare</Link></li>
               <li><Link to="/faceCare">Face Treatments</Link></li>
-              {/* <li><Link to="/">Spa Massage</Link></li> */}
+              <li><Link to="/bodyMassages">Spa Massages</Link></li>
               {/* <li><Link to="/">Skin Treatments</Link></li> */}
-              <li><Link to="/bodyMassages">Body Treatments</Link></li>
+              <li><Link to="/bodyTreatments">Body Treatments</Link></li>
               <li><Link to="/waxing">Waxing</Link></li>
               {/* <li><Link to="/">Makeup</Link></li> */}
               {/* <li><Link to="/">Massage Therapy</Link></li> */}
