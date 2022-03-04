@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { Typography, IconButton } from '@material-ui/core';
 import { ThumbUpAlt } from '@material-ui/icons';
 
@@ -9,10 +9,14 @@ import * as services from '../Services/data';
 
 const MassageItems = ({ massage }) => {
 
+  const history = useHistory();
+
+  const {name, img, type, time, price, description, likes} = massage;
+
   const value = useContext(AuthCxt);
   const user = value.user.user;
 
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(likes);
   const [count, setCount] = useState(0);
 
   const onClick = () => {
@@ -22,9 +26,15 @@ const MassageItems = ({ massage }) => {
         let currentLikes = counter;
         setCounter(() => currentLikes + 1);
         setCount(() => count + 1);
+
+        let newCounter = counter + 1;
+
+        const data = {name, img, type, time, price, description, likes: newCounter};
+
+        services.editMassage(massage._id, data)
+        .then(() => history.push('/bodyMassages'))
       }
     }
-
   }
 
   return (
@@ -32,15 +42,15 @@ const MassageItems = ({ massage }) => {
 
       <div className="indent-left3">
         <div className="wrapper p2">
-          <figure className="the-images"><img src={massage.img} alt="" /></figure>
+          <figure className="the-images"><img src={img} alt="" /></figure>
         </div>
-        <h6 className="prev-indent-bot"><Link className="link" to="#">{massage.name}</Link></h6>
+        <h6 className="prev-indent-bot"><Link className="link" to="#">{name}</Link></h6>
         {/* <p className="indent-bot">{x.description}</p> */}
         <p className='indent-bot'>
-          <span style={{ 'padding': "10px", "color": "black" }}>{massage.time} min</span>
+          <span style={{ 'padding': "10px", "color": "black" }}>{time} min</span>
           <span>       </span>
 
-          <span style={{ 'padding-left': '120px', 'color': "black" }}>{massage.price} BGN</span>
+          <span style={{ 'padding-left': '120px', 'color': "black" }}>{price} BGN</span>
         </p>
         {/* <Link className="button" to="#">Details</Link>  */}
         <p className='indent-bot'>
