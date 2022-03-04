@@ -14,6 +14,16 @@ export async function getAll(){
     return result;
 };
 
+export async function getOneMassage(id){
+    let result = await service.get(host + `/massages/${id}`);
+    return result;
+};
+
+export async function editMassage(id, data){
+    const response = await service.put(host + `/massages/${id}`, data);
+    return response
+};
+
 
 export async function getAllFaces(){
     let faces = await service.get(host + '/faces');
