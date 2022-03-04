@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { Typography, IconButton } from '@material-ui/core';
 import { ThumbUpAlt } from '@material-ui/icons';
@@ -6,6 +6,14 @@ import { ThumbUpAlt } from '@material-ui/icons';
 
 const MassageItems = ({ massages }) => {
 
+  const [counter, setCounter] = useState(0);
+
+  const onClick = () => {
+
+    let currentLikes = counter + 1;
+    setCounter(currentLikes);
+
+  }
 
   return (
     <div className="wrapper">
@@ -28,9 +36,9 @@ const MassageItems = ({ massages }) => {
             <p className='indent-bot'>
             <span >
             <Typography>
-                Likes: {0} 
+                Likes: {counter} 
               <IconButton style={{"padding-left": "140px"}}>
-                <ThumbUpAlt />
+                <ThumbUpAlt onClick={onClick} />
               </IconButton>
               </Typography>
             </span>
