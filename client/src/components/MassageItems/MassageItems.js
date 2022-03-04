@@ -4,6 +4,7 @@ import { Typography, IconButton } from '@material-ui/core';
 import { ThumbUpAlt } from '@material-ui/icons';
 
 import AuthCxt from '../../contexts/AuthCxt';
+import * as services from '../Services/data';
 
 
 const MassageItems = ({ massage }) => {
