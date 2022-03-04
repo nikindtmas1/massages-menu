@@ -8,4 +8,17 @@ router.get('/', async (req, res) => {
     res.json(massages)
 });
 
+router.get('/:id', async (req, res) => {
+
+    let result = await services.getOneMassage(req.params.id);
+    res.json(result);
+ });
+
+ router.put('/:id', async (req, res) => {
+  
+    await services.updateMassage(req.params.id, req.body);
+
+    res.json({ok: true});
+});
+
 module.exports = router;
