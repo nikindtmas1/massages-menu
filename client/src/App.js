@@ -12,6 +12,7 @@ import PageFive from './components/PageFive/PageFive';
 import Register from './components/Register/Register';
 import LoginPage from './components/Login/LoginPage';
 import BodyMassages from './components/BodyMassages/BodyMassages';
+import BodyTherapies from './components/BodyTherapies/BodyTherapies';
 import FaceCare from './components/FaceCare/FaceCare';
 import Logout from './components/Logout/Logout';
 import Waxing from './components/Waxing/Waxing';
@@ -63,6 +64,7 @@ function App() {
       <Route path='/staff' component={PageFour} />
       <Route path='/contacts' component={PageFive} />
       <Route path='/bodyMassages' component={BodyMassages} />
+      <Route path='/bodyTreatments' component={BodyTherapies} />
       <Route path='/register' component={Register} />
       <Route path='/login' component={LoginPage} />
       <Route path='/faceCare' component={FaceCare} />
