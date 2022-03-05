@@ -31,6 +31,16 @@ export async function getAllFaces(){
     return result;
 };
 
+export async function getOneFace(id){
+    let result = await service.get(host + `/faces/${id}`);
+    return result;
+};
+
+export async function editFace(id, data){
+    const response = await service.put(host + `/faces/${id}`, data);
+    return response
+};
+
 
 export async function getAllWaxing(){
     let waxing = await service.get(host + '/waxings');
