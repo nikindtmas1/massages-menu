@@ -28,7 +28,7 @@ const FaceItems = ({ faceCare }) => {
                     </div>
                     <span>
                         <Typography>
-                            Likes: {0}
+                            Likes: {likes}
                             <IconButton style={{ "padding-left": "160px" }}>
                                 <ThumbUpAlt />
                             </IconButton>
