@@ -1,25 +1,30 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import * as services from '../Services/data';
 
 import FaceItems from '../FaceItems/FaceItems';
 
 const ArticlesFacePage = () => {
 
-    const [faceCare, setFaceCare] = useState([]);
+  const [faceCares, setFaceCares] = useState([]);
 
-    useEffect(() => {
-        services.getAllFaces()
-        .then((result) => setFaceCare(result))
-    },[]);
+  useEffect(() => {
+    services.getAllFaces()
+      .then((result) => setFaceCares(result))
+  }, []);
 
   return (
     <article className="grid_12">
-    <h3 className="p2">Face Care</h3>
-    <div className="wrapper p4">
+      <h3 className="p2">Face Care</h3>
+      <div className="wrapper p4">
+        <div className='wraper'>
+          {faceCares.map((faceCare) => (
 
-    <FaceItems faceCare={faceCare} />
-    </div>
-  </article>
+            <FaceItems faceCare={faceCare} />
+
+          ))}
+        </div>
+      </div>
+    </article>
   )
 }
 
