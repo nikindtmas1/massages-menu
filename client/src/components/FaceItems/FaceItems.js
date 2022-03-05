@@ -1,31 +1,45 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React, {useContext} from 'react';
+import { Link } from 'react-router-dom';
+import AuthCxt from '../../contexts/AuthCxt';
 
-const FaceItems = ({faceCare}) => {
-  return (
+import { Typography, IconButton } from '@material-ui/core';
+import { ThumbUpAlt } from '@material-ui/icons';
+
+const FaceItems = ({ faceCare }) => {
     
- 
-          <div className='grid_4 alpha'>
-         <div className="listing">
-         <div className="the-images">
-             <img src={faceCare.img} />
-         </div>
-         <Link to='/'><h5>{faceCare.name}</h5></Link>
-         <div className="info">
-             <div className="data-info" >
-                 <h5 >{faceCare.time} min</h5>
-                 <h6>{faceCare.price} BGN</h6>
-             </div>
-         </div>
-         </div>
-         <br />
-         <br />
-         </div>
-         
-  
-       
- 
-  )
+    const value = useContext(AuthCxt);
+    const user = value.user.user;
+
+    const {name, img, type, time, price, description, likes} = faceCare;
+
+    return (
+
+        <div className='grid_4 alpha'>
+            <div className="listing">
+                <div className="the-images">
+                    <img src={img} />
+                </div>
+                <Link to='/'><h5>{name}</h5></Link>
+                <div className="info">
+                    <div className="data-info" >
+                        <span >{time} min</span>
+                        <span style={{ 'padding-left': '140px', 'color': "black" }}>{price} BGN</span>
+
+                    </div>
+                    <span>
+                        <Typography>
+                            Likes: {0}
+                            <IconButton style={{ "padding-left": "160px" }}>
+                                <ThumbUpAlt />
+                            </IconButton>
+                        </Typography>
+                    </span>
+                </div>
+            </div>
+            <br />
+            <br />
+        </div>
+    )
 }
 
 export default FaceItems
