@@ -55,5 +55,21 @@ export async function getOneWaxing(id){
 
 export async function editWaxing(id, data){
     const response = await service.put(host + `/waxings/${id}`, data);
-    return response
+    return response;
+};
+
+export async function getAllBodyTherapy(){
+    let bodyTherapies = await service.get(host + '/bodyTherapies');
+    let result = Object.values(bodyTherapies);
+    return result;
+};
+
+export async function getOneBodyTherapy(id){
+    let response = await service.get(host + `/bodyTherapies/${id}`);
+    return response;
+};
+
+export async function editBodyTherapy(id, data){
+    let response = await service.put(host + `/bodyTherapies/${id}`, data);
+    return response;
 };
