@@ -1,6 +1,6 @@
 const BodyTherapies = require('../models/boduTherapyModel');
 
-const getAllBodyTherapies = () => BodyTherapies.find({});
+const getAllBodyTherapies = () => BodyTherapies.find();
 
 const getOneBodyTherapy = (id) => BodyTherapies.findById(id);
 
