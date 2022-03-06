@@ -18,7 +18,7 @@ const Navigation = () => {
       <Link to="/services">Services</Link>
     </li>
     <li>
-      <Link to="/therapies">Therapies</Link>
+      <Link to="/bodyTreatments">Therapies</Link>
     </li>
     {/* <li>
       <Link to="/staff">Our Staff</Link>
