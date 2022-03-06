@@ -6,6 +6,7 @@ const services = require('../services/bodyTherapyService');
 router.get('/', async (req, res) => {
 
     const bodyTherapies = await services.getAllBodyTherapies();
+    console.log(bodyTherapies);
     res.json(bodyTherapies);
 });
 
