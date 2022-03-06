@@ -1,25 +1,25 @@
 import React, {useState, useEffect} from 'react';
 import * as services from '../Services/data';
 
-import FaceItems from '../FaceItems/FaceItems';
+import BodyTherapyItems from '../BodyTherapyItems/BodyTherapyItems';
 
 const ArticlesBodyTherapyPage = () => {
 
-    const [faceCares, setFaceCares] = useState([]);
+    const [bodyTherapies, setBodyTherapies] = useState([]);
 
     useEffect(() => {
-      services.getAllFaces()
-        .then((result) => setFaceCares(result))
+      services.getAllBodyTherapy()
+        .then((result) => setBodyTherapies(result))
     }, []);
 
   return (
     <article className="grid_12">
-    <h3 className="p2">Face Care</h3>
+    <h3 className="p2">Body Therapies</h3>
     <div className="wrapper p4">
       <div className='wraper'>
-        {faceCares.map((faceCare) => (
+        {bodyTherapies.map((bodyTherapy) => (
 
-          <FaceItems faceCare={faceCare} />
+          <BodyTherapyItems bodyTherapy={bodyTherapy} />
 
         ))}
       </div>
