@@ -37,7 +37,7 @@ const ArticlesPageFive = () => {
                     <textarea placeholder='Your Message' name='usermessage'></textarea>
                     <div className="clear"></div>
                     {/* <div className="buttons"> <Link className="button" to="#">Clear form</Link> <Link type='submit' to="/">Send message</Link> </div> */}
-                  <input className="buttons" type='submit'></input>
+                  <input className="buttons" type='submit' style={{"background":'hsl(185, 96%, 81%)'}}></input>
                   </div>
                 </div>
               {/* </fieldset> */}
