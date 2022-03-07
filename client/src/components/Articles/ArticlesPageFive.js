@@ -19,23 +19,24 @@ const ArticlesPageFive = () => {
     <>
          <article className="grid_8">
             <h3 className="p2">Contact Form</h3>
-            <form onSubmit={onSubmit} id="contact-form"  method="POST" >
+            <form onSubmit={onSubmit} id="contacts-form"  method="POST" >
               {/* <fieldset> */}
-                <label><span className="text-form">Your Name:</span>
-                  <input name="username" type="text" />
-                </label>
-                <label><span className="text-form">Your Email:</span>
-                  <input name="useremail" type="text" />
-                </label>
-                <label><span className="text-form">Subject:</span>
-                  <input name="p3" type="text" />
-                </label>
+                {/* <label><span className="text-form">Your Name:</span>
+                </label> */}
+                  <input placeholder='Your Name' name="username" type="text" />
+                {/* <label><span className="text-form">Your Email:</span>
+                </label> */}
+                  <input placeholder='Your Email' name="useremail" type="text" />
+                {/* <label><span className="text-form">Subject:</span>
+                </label> */}
+                  {/* <input name="p3" type="text" /> */}
                 <div className="wrapper">
-                  <div className="text-form">Your Message:</div>
+                  {/* <div className="text-form">Your Message:</div> */}
                   <div className="extra-wrap">
-                    <textarea></textarea>
+                    <textarea placeholder='Your Message'></textarea>
                     <div className="clear"></div>
-                    <div className="buttons"> <Link className="button" to="#">Clear form</Link> <Link className="button" to="/">Send message</Link> </div>
+                    {/* <div className="buttons"> <Link className="button" to="#">Clear form</Link> <Link type='submit' to="/">Send message</Link> </div> */}
+                  <input className="buttons" type='submit'></input>
                   </div>
                 </div>
               {/* </fieldset> */}
