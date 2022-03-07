@@ -9,8 +9,9 @@ const ArticlesPageFive = () => {
     let formData = new FormData(e.currentTarget);
     let username = formData.get("username").trim();
     let useremail = formData.get("useremail").trim();
+    let usermessage = formData.get('usermessage').trim();
 
-    console.log(username, useremail);
+    console.log(username, useremail, usermessage);
 
 
   }
@@ -33,7 +34,7 @@ const ArticlesPageFive = () => {
                 <div className="wrapper">
                   {/* <div className="text-form">Your Message:</div> */}
                   <div className="extra-wrap">
-                    <textarea placeholder='Your Message'></textarea>
+                    <textarea placeholder='Your Message' name='usermessage'></textarea>
                     <div className="clear"></div>
                     {/* <div className="buttons"> <Link className="button" to="#">Clear form</Link> <Link type='submit' to="/">Send message</Link> </div> */}
                   <input className="buttons" type='submit'></input>
@@ -48,10 +49,10 @@ const ArticlesPageFive = () => {
               <iframe width="300" height="222" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
             </figure> */}
             <dl>
-              <dt className="prev-indent-bot color-3"><strong>8901 Marmora Road, Glasgow, D04 89GR.</strong></dt>
-              <dd><span>Freephone:</span> +1 800 559 6580</dd>
-              <dd><span>FAX:</span> +1 504 889 9898</dd>
-              <dd><span>E-mail:</span> <Link to="#">mail@demolink.org</Link></dd>
+              <dt className="prev-indent-bot color-3"><strong> Varna, Golden Sands, Street: First</strong></dt>
+              <dd><span>Phone:</span> +359 882 196 877</dd>
+              {/* <dd><span>FAX:</span> +1 504 889 9898</dd> */}
+              <dd><span>E-mail:</span>spareception@interhc.com</dd>
             </dl>
           </article>
     </>
