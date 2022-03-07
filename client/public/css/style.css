@@ -503,3 +503,29 @@ footer {
 	display: block;
 	margin: 0 auto;
   }
+
+  #contacts-form input {
+	float:inherit;
+	width:326px;
+	font-size:10px;
+	line-height:1.23em;
+	color:#4f4f4f;
+	padding:4px 10px;
+	margin:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	/* border:1px solid #e5e5e5; */
+	/* background:none */
+}
+
+#contacts-form textarea {
+	float:inherit;
+	width:326px;
+	font-size:10px;
+	line-height:1.23em;
+	color:#4f4f4f;
+	padding:4px 10px;
+	margin:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	/* border:1px solid #e5e5e5; */
+	/* background:none */
+}
