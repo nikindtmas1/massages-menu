@@ -11,6 +11,14 @@ const ArticlesPageFive = () => {
     let useremail = formData.get("useremail").trim();
     let usermessage = formData.get('usermessage').trim();
 
+    if (username === "" || useremail === "" || usermessage === "") {
+      return alert("All fields are required!");
+    };
+
+    if (username.length < 3) {
+      return alert("Username input is invalid!");
+    };
+
     console.log(username, useremail, usermessage);
 
 
