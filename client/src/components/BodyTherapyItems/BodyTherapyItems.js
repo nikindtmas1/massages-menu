@@ -1,9 +1,15 @@
 import React, {useContext, useState, useEffect} from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import AuthCxt from '../../contexts/AuthCxt';
+// import Accordion from '@mui/material/Accordion';
+// import AccordionSummary from '@mui/material/AccordionSummary';
+// import AccordionDetails from '@mui/material/AccordionDetails';
 
-import { Typography, IconButton } from '@material-ui/core';
-import { ThumbUpAlt } from '@material-ui/icons';
+// import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+import { Typography, IconButton, Accordion, AccordionSummary, AccordionDetails } from '@material-ui/core';
+import { ThumbUpAlt, ExpandMore } from '@material-ui/icons';
+
 
 import * as services from '../Services/data';
 
@@ -46,7 +52,23 @@ const BodyTherapyItems = ({ bodyTherapy }) => {
         <div className="the-images">
             <img src={img} />
         </div>
-        <Link to='/'><h5>{name}</h5></Link>
+
+        <Accordion>
+        <AccordionSummary
+        //   expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography>Descriptions</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            {description}
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      
+        {/* <Link to='/'><h5>{name}</h5></Link> */}
         <div className="info">
             <div className="data-info" >
                 <span >{time} min</span>
