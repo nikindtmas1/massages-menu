@@ -2,7 +2,7 @@ import React, {useContext, useState, useEffect} from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import AuthCxt from '../../contexts/AuthCxt';
 
-import { Typography, IconButton } from '@material-ui/core';
+import { Typography, IconButton, Accordion, AccordionDetails, AccordionSummary } from '@material-ui/core';
 import { ThumbUpAlt } from '@material-ui/icons';
 
 import * as services from '../Services/data';
@@ -48,7 +48,7 @@ const FaceItems = ({ faceCare }) => {
                 <div className="the-images">
                     <img src={img} />
                 </div>
-                <Link to='/'><h5>{name}</h5></Link>
+                {/* <Link to='/'><h5>{name}</h5></Link> */}
                 <div className="info">
                     <div className="data-info" >
                         <span >{time} min</span>
@@ -64,6 +64,21 @@ const FaceItems = ({ faceCare }) => {
                         </Typography>
                     </span>
                 </div>
+
+                <Accordion>
+        <AccordionSummary
+        //   expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography>Descriptions</Typography>
+        </AccordionSummary>
+        <AccordionDetails >
+          <Typography >
+            {description}
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
             </div>
             <br />
             <br />
