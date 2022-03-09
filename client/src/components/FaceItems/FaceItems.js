@@ -45,10 +45,24 @@ const FaceItems = ({ faceCare }) => {
 
         <div className='grid_4 alpha'>
             <div className="listing">
+            <Accordion style={{'width':'282px'}}>
+        <AccordionSummary
+        //   expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography>{name}</Typography>
+        </AccordionSummary>
+        <AccordionDetails >
+          <Typography >
+            {description}
+          </Typography>
+        </AccordionDetails>
+                </Accordion>
                 <div className="the-images">
                     <img src={img} />
                 </div>
-                {/* <Link to='/'><h5>{name}</h5></Link> */}
+                {/* <h5>{name}</h5> */}
                 <div className="info">
                     <div className="data-info" >
                         <span >{time} min</span>
@@ -65,20 +79,7 @@ const FaceItems = ({ faceCare }) => {
                     </span>
                 </div>
 
-                <Accordion>
-        <AccordionSummary
-        //   expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography>Descriptions</Typography>
-        </AccordionSummary>
-        <AccordionDetails >
-          <Typography >
-            {description}
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
+               
             </div>
             <br />
             <br />
