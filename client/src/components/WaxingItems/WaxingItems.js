@@ -71,8 +71,10 @@ const WaxingItems = ({ waxTherapy }) => {
                 </div>
 
                 <IconButton  onClick={onClick}>
-
+                    {user
+                    ?
                     <ThumbUpAlt />
+                : null}
 
                 </IconButton>
             </CardActions>
