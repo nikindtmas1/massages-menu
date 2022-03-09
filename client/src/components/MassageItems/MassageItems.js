@@ -62,8 +62,7 @@ const MassageItems = ({ massage }) => {
         {/* <p className="indent-bot">{x.description}</p> */}
         <p className='indent-bot'>
           <span style={{ 'padding': "10px", "color": "black" }}>{time} min</span>
-          <span>       </span>
-
+      
           <span style={{ 'padding-left': '120px', 'color': "black" }}>{price} BGN</span>
         </p>
         {/* <Link className="button" to="#">Details</Link>  */}
