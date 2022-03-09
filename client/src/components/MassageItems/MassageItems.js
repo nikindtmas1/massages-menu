@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { Typography, IconButton, Accordion, AccordionDetails, AccordionSummary } from '@material-ui/core';
 import { ThumbUpAlt } from '@material-ui/icons';
 

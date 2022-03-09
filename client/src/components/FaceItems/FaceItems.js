@@ -1,5 +1,5 @@
-import React, {useContext, useState, useEffect} from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import React, {useContext, useState} from 'react';
+import { useHistory } from 'react-router-dom';
 import AuthCxt from '../../contexts/AuthCxt';
 
 import { Typography, IconButton, Accordion, AccordionDetails, AccordionSummary } from '@material-ui/core';
