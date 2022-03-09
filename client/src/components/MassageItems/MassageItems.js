@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import { Typography, IconButton } from '@material-ui/core';
+import { Typography, IconButton, Accordion, AccordionDetails, AccordionSummary } from '@material-ui/core';
 import { ThumbUpAlt } from '@material-ui/icons';
 
 import AuthCxt from '../../contexts/AuthCxt';
@@ -44,7 +44,7 @@ const MassageItems = ({ massage }) => {
         <div className="wrapper p2">
           <figure className="the-images"><img src={img} alt="" /></figure>
         </div>
-        <h6 className="prev-indent-bot"><Link className="link" to="#">{name}</Link></h6>
+        {/* <h6 className="prev-indent-bot"><Link className="link" to="#">{name}</Link></h6> */}
         {/* <p className="indent-bot">{x.description}</p> */}
         <p className='indent-bot'>
           <span style={{ 'padding': "10px", "color": "black" }}>{time} min</span>
@@ -62,16 +62,22 @@ const MassageItems = ({ massage }) => {
               </IconButton>
             </Typography>
           </span>
-          {/* <span>       </span> */}
-
-          {/* <span style={{ 'padding-left': '120px', 'color': "black" }}>
-          
-              </span> */}
-
-
-
         </p>
 
+        <Accordion>
+        <AccordionSummary
+        //   expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography>Descriptions</Typography>
+        </AccordionSummary>
+        <AccordionDetails >
+          <Typography >
+            {description}
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
       </div>
       <br />
       <br />
