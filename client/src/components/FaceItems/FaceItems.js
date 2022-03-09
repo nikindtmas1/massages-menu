@@ -73,7 +73,10 @@ const FaceItems = ({ faceCare }) => {
                         <Typography style={{'padding-left': '10px'}}>
                             Likes: {counter}
                             <IconButton style={{ "padding-left": "160px" }}>
-                                <ThumbUpAlt onClick={onClick} />
+                               {user
+                               ?
+                               <ThumbUpAlt onClick={onClick} />
+                                :null}
                             </IconButton>
                         </Typography>
                     </span>
