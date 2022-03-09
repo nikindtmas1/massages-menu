@@ -41,10 +41,24 @@ const MassageItems = ({ massage }) => {
     <div className="grid_4 alpha">
 
       <div className="indent-left3">
+      <Accordion style={{'width':'282px'}}>
+        <AccordionSummary
+        //   expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography>{name}</Typography>
+        </AccordionSummary>
+        <AccordionDetails >
+          <Typography >
+            {description}
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
         <div className="wrapper p2">
           <figure className="the-images"><img src={img} alt="" /></figure>
         </div>
-        {/* <h6 className="prev-indent-bot"><Link className="link" to="#">{name}</Link></h6> */}
+        {/* <h6 className="prev-indent-bot">{name}</h6> */}
         {/* <p className="indent-bot">{x.description}</p> */}
         <p className='indent-bot'>
           <span style={{ 'padding': "10px", "color": "black" }}>{time} min</span>
@@ -55,29 +69,16 @@ const MassageItems = ({ massage }) => {
         {/* <Link className="button" to="#">Details</Link>  */}
         <p className='indent-bot'>
           <span >
-            <Typography>
+            <Typography style={{'padding-left': '10px'}}>
               Likes: {counter}
-              <IconButton style={{ "padding-left": "140px" }}>
+              <IconButton style={{ "padding-left": "150px" }}>
                 <ThumbUpAlt onClick={onClick} />
               </IconButton>
             </Typography>
           </span>
         </p>
 
-        <Accordion>
-        <AccordionSummary
-        //   expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography>Descriptions</Typography>
-        </AccordionSummary>
-        <AccordionDetails >
-          <Typography >
-            {description}
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
+        
       </div>
       <br />
       <br />
