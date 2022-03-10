@@ -10,12 +10,12 @@ const Footer = () => {
               <div className="grid_8">
                 <div className="footer-text">
                   <b>
-                    Copyright &copy; 2022 <span >All Rights Reserved.</span> Health&Relax International
+                   &copy; 2022 <span >All Rights Reserved - </span> Health&Relax International
                   </b>{" "}
-                  Design by{" "}
+                  {/* Design by{" "}
                   <a  href="http://www.templatemonster.com/">
                     TemplateMonster.com
-                  </a>
+                  </a> */}
                 </div>
                 {/* <ul className="list-services">
                   <li>
