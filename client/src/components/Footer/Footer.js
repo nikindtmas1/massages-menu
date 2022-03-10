@@ -10,7 +10,7 @@ const Footer = () => {
               <div className="grid_8">
                 <div className="footer-text">
                   <b>
-                    Copyright &copy; <Link to="/">Developed by</Link> Nikolay Nikolaev
+                    Copyright &copy; 2022 <span >All Rights Reserved.</span> Health&Relax International
                   </b>{" "}
                   Design by{" "}
                   <a  href="http://www.templatemonster.com/">
