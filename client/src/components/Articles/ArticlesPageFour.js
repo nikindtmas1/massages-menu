@@ -16,7 +16,7 @@ const ArticlesPageFour = () => {
           </ul>
         </div>
         <strong className="text-1 color-3 prev-indent-bot2">Rehabilitation specialist</strong>
-        <p>Consectetur adipcing eld eiusmod tempor incidint utbore dolore magna aliquat enim minim veniam quis nostrud exercitation ullamco laborum et dolorum.</p>
+        <p>Rehabilitation is a specialty that covers the diagnosis and treatment of physical and functional disorders in the musculoskeletal, nervous or cardiovascular systems.</p>
         {/* <Link className="button" to="#">Details</Link>  */}
         </div>
     </div>
@@ -31,7 +31,7 @@ const ArticlesPageFour = () => {
           </ul>
         </div>
         <strong className="text-1 color-3 prev-indent-bot2">Rehabilitation specialist</strong>
-        <p>Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup tate velit esse cillum dolore eu fugiat nulla pariatur vero eos et accusamus.</p>
+        <p>Rehabilitation is a specialty that covers the diagnosis and treatment of physical and functional disorders in the musculoskeletal, nervous or cardiovascular systems.</p>
         {/* <Link className="button" to="#">Details</Link> </div> */}
     </div>
     </div>
@@ -46,7 +46,7 @@ const ArticlesPageFour = () => {
           </ul>
         </div>
         <strong className="text-1 color-3 prev-indent-bot2">Massage specialist</strong>
-        <p>Consectetur adipcing eld eiusmod tempor incidint utbore dolore magna aliquat enim minim veniam quis nostrud exercitation ullamco laborum et dolorum.</p>
+        <p>Physical Therapy is a specialty that covers the diagnosis and treatment of physical and functional disorders in the musculoskeletal, nervous or cardiovascular systems.</p>
         {/* <Link className="button" to="#">Details</Link> </div> */}
     </div>
     </div>
