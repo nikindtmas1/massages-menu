@@ -6,12 +6,22 @@ const AsideArticleTwo = () => {
     <>
         <article className="grid_6">
           <h3 className="p1">Why choose us?</h3>
-          <h6 className="prev-indent-bot"><Link className="link" to="/">Lorem ipsum dolor sit amet, consectetur adipisicing elit</Link></h6>
-          <p className="indent-bot">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse. </p>
-          <h6 className="prev-indent-bot"><Link className="link" to="/">Excepteur sint occaecat cupidatat non proident</Link></h6>
-          <p className="indent-bot">Sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-          <h6 className="prev-indent-bot"><Link className="link" to="/">Eaque ipsa quae ab illo inventore veritatis et quasi </Link></h6>
-          <p className="indent-bot">Architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptaporro quisquam est, qui dolorem ipsum quia dolor.</p>
+          <h6 className="prev-indent-bot">A Perfect Atmosphere
+            {/* <Link className="link" to="/">Lorem ipsum dolor sit amet, consectetur adipisicing elit</Link> */}
+            </h6>
+          <p className="indent-bot">Our soothing and spacious salon is ideal; accordingly, many of our customers say they always look forward to coming in.
+            We designed our building interior with a goal in mind – to combine rich cultural tradition with a modern spa atmosphere to offer the best salon experience possible. </p>
+          <h6 className="prev-indent-bot">High Quality SPA
+            {/* <Link className="link" to="/">Excepteur sint occaecat cupidatat non proident</Link> */}
+            </h6>
+          <p className="indent-bot">Our spa therapevts are experienced and skilled at spa services.
+          Our spa services are renowned for being superb yet affordable.
+          We provide fully comprehensive salon services, including: Waxing, Massage, Facials.</p>
+          <h6 className="prev-indent-bot">Customer Service
+            {/* <Link className="link" to="/">Eaque ipsa quae ab illo inventore veritatis et quasi </Link> */}
+            </h6>
+          <p className="indent-bot">Our spa therapevts uniquely talented. Also, they are expertly trained to provide relaxing and effective spa treatments.
+We staff plenty therapists during peak periods to make sure  we can accommodate walk-ins.</p>
           {/* <Link className="button" to="/">Read More</Link>  */}
           </article>
         <article className="grid_6">
