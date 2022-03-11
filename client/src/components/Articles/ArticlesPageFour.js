@@ -140,6 +140,21 @@ const ArticlesPageFour = () => {
         {/* <Link className="button" to="#">Details</Link> </div> */}
     </div>
     </div>
+    <div className="wrapper p4">
+      <figure className="img-indent border"><img src="images/page4-img4.png" alt="" /></figure>
+      <div className="extra-wrap">
+        <div className="wrapper">
+          <h4 className="fleft">Diana Staneva</h4>
+          {/* <ul className="list-services fright indent-top">
+            <li><Link to="#"></Link></li>
+            <li><Link className="item-2" to="#"></Link></li>
+          </ul> */}
+        </div>
+        <strong className="text-1 color-3 prev-indent-bot2">Lifeguard</strong>
+        <p>A lifeguard is a rescuer who supervises the safety and rescue of swimmers, surfers, and other water sports participants such as in a swimming pool, water park, beach, spa, river and lake. Lifeguards are trained in swimming and CPR/AED first aid, certified in water rescue using a variety of aids and equipment depending on requirements of their particular venue.</p>
+        {/* <Link className="button" to="#">Details</Link> </div> */}
+    </div>
+    </div>
   </article>
   )
 }
