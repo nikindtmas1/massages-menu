@@ -9,7 +9,7 @@ const ArticlesPageFour = () => {
       <figure className="img-indent border"><img src="images/page4-img4.png" alt="" /></figure>
       <div className="extra-wrap">
         <div className="wrapper">
-          <h4 className="fleft">Arzu Mehmed</h4>
+          <h4 className="fleft">A.M.</h4>
           {/* <ul className="list-services fright indent-top">
             <li><Link to="#"></Link></li>
             <li><Link className="item-2" to="#"></Link></li>
@@ -24,7 +24,7 @@ const ArticlesPageFour = () => {
       <figure className="img-indent border"><img src="images/page4-img4.png" alt="" /></figure>
       <div className="extra-wrap">
         <div className="wrapper">
-          <h4 className="fleft">Zlatina Stancheva</h4>
+          <h4 className="fleft">Z.S.</h4>
           {/* <ul className="list-services fright indent-top">
             <li><Link to="#"></Link></li>
             <li><Link className="item-2" to="#"></Link></li>
@@ -39,7 +39,7 @@ const ArticlesPageFour = () => {
       <figure className="img-indent border"><img src="images/page4-img4.png" alt="" /></figure>
       <div className="extra-wrap">
         <div className="wrapper">
-          <h4 className="fleft">Svetlana Angelova</h4>
+          <h4 className="fleft">S.A.</h4>
           {/* <ul className="list-services fright indent-top">
             <li><Link to="#"></Link></li>
             <li><Link className="item-2" to="#"></Link></li>
@@ -54,7 +54,7 @@ const ArticlesPageFour = () => {
       <figure className="img-indent border"><img src="images/page4-img4.png" alt="" /></figure>
       <div className="extra-wrap">
         <div className="wrapper">
-          <h4 className="fleft">Natalya Raznatovskaya</h4>
+          <h4 className="fleft">N.R.</h4>
           {/* <ul className="list-services fright indent-top">
             <li><Link to="#"></Link></li>
             <li><Link className="item-2" to="#"></Link></li>
@@ -69,7 +69,7 @@ const ArticlesPageFour = () => {
       <figure className="img-indent border"><img src="images/page4-img4.png" alt="" /></figure>
       <div className="extra-wrap">
         <div className="wrapper">
-          <h4 className="fleft">Dani Petrova</h4>
+          <h4 className="fleft">D.P.</h4>
           {/* <ul className="list-services fright indent-top">
             <li><Link to="#"></Link></li>
             <li><Link className="item-2" to="#"></Link></li>
@@ -84,7 +84,7 @@ const ArticlesPageFour = () => {
       <figure className="img-indent border"><img src="images/page4-img4.png" alt="" /></figure>
       <div className="extra-wrap">
         <div className="wrapper">
-          <h4 className="fleft">Maya Ivanova</h4>
+          <h4 className="fleft">M.I.</h4>
           {/* <ul className="list-services fright indent-top">
             <li><Link to="#"></Link></li>
             <li><Link className="item-2" to="#"></Link></li>
@@ -99,7 +99,7 @@ const ArticlesPageFour = () => {
       <figure className="img-indent border"><img src="images/page4-img4.png" alt="" /></figure>
       <div className="extra-wrap">
         <div className="wrapper">
-          <h4 className="fleft">Rady Dimitrova</h4>
+          <h4 className="fleft">R.D.</h4>
           {/* <ul className="list-services fright indent-top">
             <li><Link to="#"></Link></li>
             <li><Link className="item-2" to="#"></Link></li>
@@ -114,7 +114,7 @@ const ArticlesPageFour = () => {
       <figure className="img-indent border"><img src="images/page4-img5.png" alt="" /></figure>
       <div className="extra-wrap">
         <div className="wrapper">
-          <h4 className="fleft">Dimitar Eliseev</h4>
+          <h4 className="fleft">D.E.</h4>
           {/* <ul className="list-services fright indent-top">
             <li><Link to="#"></Link></li>
             <li><Link className="item-2" to="#"></Link></li>
@@ -129,7 +129,7 @@ const ArticlesPageFour = () => {
       <figure className="img-indent border"><img src="images/page4-img5.png" alt="" /></figure>
       <div className="extra-wrap">
         <div className="wrapper">
-          <h4 className="fleft">Stefan Tonchev</h4>
+          <h4 className="fleft">S.T.</h4>
           {/* <ul className="list-services fright indent-top">
             <li><Link to="#"></Link></li>
             <li><Link className="item-2" to="#"></Link></li>
@@ -144,7 +144,7 @@ const ArticlesPageFour = () => {
       <figure className="img-indent border"><img src="images/page4-img4.png" alt="" /></figure>
       <div className="extra-wrap">
         <div className="wrapper">
-          <h4 className="fleft">Diana Staneva</h4>
+          <h4 className="fleft">D.S.</h4>
           {/* <ul className="list-services fright indent-top">
             <li><Link to="#"></Link></li>
             <li><Link className="item-2" to="#"></Link></li>
