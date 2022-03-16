@@ -48,7 +48,9 @@ const MassageItems = ({ massage }) => {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>{name}</Typography>
+          <Typography>{name}
+          <figure className="the-images"><img src={img} alt="" /></figure>
+          </Typography>
         </AccordionSummary>
         <AccordionDetails >
           <Typography >
@@ -57,7 +59,7 @@ const MassageItems = ({ massage }) => {
         </AccordionDetails>
       </Accordion>
         <div className="wrapper p2">
-          <figure className="the-images"><img src={img} alt="" /></figure>
+          {/* <figure className="the-images"><img src={img} alt="" /></figure> */}
         </div>
         {/* <h6 className="prev-indent-bot">{name}</h6> */}
         {/* <p className="indent-bot">{x.description}</p> */}
