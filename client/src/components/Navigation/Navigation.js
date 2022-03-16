@@ -4,9 +4,12 @@ import ToggleButton from '@mui/material/ToggleButton';
 import AuthCxt from '../../contexts/AuthCxt';
 
 
+
+
 const Navigation = () => {
 
-  const [selected, setSelected] = useState(false);
+ 
+
   const [isActive, setActive] = useState(false);
 
   const toggleClass = () => {
@@ -18,12 +21,10 @@ const Navigation = () => {
   let isAuth = value.user.isAuthenticated;
 
   let guestNav = (
+   
     <ul className="menu">
     <li >
-      <ToggleButton selected={selected}
-      onChange={() => {
-        setSelected(!selected);
-      }}  to="/">About us</ToggleButton>
+      <Link className=""  to="/">About us</Link>
     </li>
     <li>
       <Link to="/services">Services</Link>
