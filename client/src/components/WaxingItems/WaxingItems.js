@@ -70,7 +70,7 @@ const WaxingItems = ({ waxTherapy }) => {
                     </Typography>
                 </div>
 
-                <IconButton  onClick={onClick}>
+                <IconButton style={{ "padding-left": "10px",'marginLeft':'110px' }}  onClick={onClick}>
                     {user
                     ?
                     <ThumbUpAlt />
