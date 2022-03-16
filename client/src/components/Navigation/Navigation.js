@@ -1,10 +1,12 @@
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
+import ToggleButton from '@mui/material/ToggleButton';
 import AuthCxt from '../../contexts/AuthCxt';
 
 
 const Navigation = () => {
 
+  const [selected, setSelected] = useState(false);
   const [isActive, setActive] = useState(false);
 
   const toggleClass = () => {
@@ -18,7 +20,10 @@ const Navigation = () => {
   let guestNav = (
     <ul className="menu">
     <li >
-      <Link className=""  to="/">About us</Link>
+      <ToggleButton selected={selected}
+      onChange={() => {
+        setSelected(!selected);
+      }}  to="/">About us</ToggleButton>
     </li>
     <li>
       <Link to="/services">Services</Link>
