@@ -1,17 +1,23 @@
 import React, {useState, useEffect} from 'react';
-import { CircularProgress } from '@material-ui/core';
-import { Box } from '@material-ui/core';
+// import { CircularProgress } from '@material-ui/core';
+// import { Box } from '@material-ui/core';
 import * as services from '../Services/data';
 
 import BodyTherapyItems from '../BodyTherapyItems/BodyTherapyItems';
+import CircularIndeterminate from '../Circular/Circular';
+
 
 const ArticlesBodyTherapyPage = () => {
 
     const [bodyTherapies, setBodyTherapies] = useState([]);
 
     useEffect(() => {
-      services.getAllBodyTherapy()
+      setTimeout(() => {
+
+        services.getAllBodyTherapy()
         .then((result) => setBodyTherapies(result))
+      }, 3000)
+     
     }, []);
 
   return (
@@ -20,15 +26,15 @@ const ArticlesBodyTherapyPage = () => {
     <div className="wrapper p4">
       <div className='wraper'>
         {
-        bodyTherapies ?
-        bodyTherapies.map((bodyTherapy) => (
+        !bodyTherapies ?
+          <CircularIndeterminate />
+          : 
+          bodyTherapies.map((bodyTherapy) => (
 
-          <BodyTherapyItems bodyTherapy={bodyTherapy} />
-
-        ))
-          : <Box sx={{ display: 'flex' }}>
-              <CircularProgress />
-            </Box>
+            <BodyTherapyItems bodyTherapy={bodyTherapy} />
+  
+          ))
+        
       }
       </div>
     </div>
