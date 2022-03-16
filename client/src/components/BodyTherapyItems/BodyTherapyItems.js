@@ -74,7 +74,7 @@ const BodyTherapyItems = ({ bodyTherapy }) => {
             <span>
                 <Typography style={{'padding-left': '10px'}}>
                     Likes: {counter}
-                    <IconButton style={{ "padding-left": "160px" }}>
+                    <IconButton style={{ "padding-left": "10px", 'marginLeft':'130px' }}>
                         {user
                         ?
                         <ThumbUpAlt onClick={onClick} />
