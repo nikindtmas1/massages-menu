@@ -50,7 +50,9 @@ const BodyTherapyItems = ({ bodyTherapy }) => {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>{name}</Typography>
+          <Typography>{name}
+          <img src={img} />
+          </Typography>
         </AccordionSummary>
         <AccordionDetails >
           <Typography >
@@ -59,7 +61,7 @@ const BodyTherapyItems = ({ bodyTherapy }) => {
         </AccordionDetails>
       </Accordion>
         <div className="the-images">
-            <img src={img} />
+            {/* <img src={img} /> */}
         </div>
 
    
