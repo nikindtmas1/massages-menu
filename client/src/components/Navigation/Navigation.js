@@ -1,9 +1,15 @@
-import React, {useContext} from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import AuthCxt from '../../contexts/AuthCxt';
 
 
 const Navigation = () => {
+
+  const [isActive, setActive] = useState(false);
+
+  const toggleClass = () => {
+    setActive(!isActive);
+  };
 
   let value = useContext(AuthCxt);
   let user = value.user.user;
@@ -11,8 +17,8 @@ const Navigation = () => {
 
   let guestNav = (
     <ul className="menu">
-    <li>
-      <Link  to="/">About us</Link>
+    <li >
+      <Link className=""  to="/">About us</Link>
     </li>
     <li>
       <Link to="/services">Services</Link>
@@ -41,20 +47,21 @@ const Navigation = () => {
   let userNav = (
     <>
     <ul className="menu">
-    <li>
-      <Link  to="/">About us</Link>
+    <li >
+      <Link className={isActive ? 'active': null} 
+      onClick={toggleClass}  to="/" >About us</Link>
     </li>
     <li>
-      <Link to="/services">Services</Link>
+      <Link  to="/services">Services</Link>
     </li>
     <li>
-      <Link to="/bodyTreatments">Therapies</Link>
+      <Link  to="/bodyTreatments">Therapies</Link>
     </li>
     <li>
-      <Link to="/staff">Our Staff</Link>
+      <Link  to="/staff">Our Staff</Link>
     </li>
     <li>
-      <Link to="/contacts">Contacts</Link>
+      <Link  to="/contacts">Contacts</Link>
     </li>
     {/* <li >
       <Link to="/register">Register</Link>
