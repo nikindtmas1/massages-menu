@@ -71,7 +71,7 @@ const MassageItems = ({ massage }) => {
           <span >
             <Typography style={{'padding-left': '10px'}}>
               Likes: {counter}
-              <IconButton style={{ "padding-left": "150px" }}>
+              <IconButton style={{ "padding-left": "10px",'marginLeft':'130px' }}>
                 {user
                 ?
                 <ThumbUpAlt onClick={onClick} />
