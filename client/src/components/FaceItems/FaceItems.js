@@ -51,7 +51,9 @@ const FaceItems = ({ faceCare }) => {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>{name}</Typography>
+          <Typography>{name}
+          <img src={img} />
+          </Typography>
         </AccordionSummary>
         <AccordionDetails >
           <Typography >
@@ -60,7 +62,7 @@ const FaceItems = ({ faceCare }) => {
         </AccordionDetails>
                 </Accordion>
                 <div className="the-images">
-                    <img src={img} />
+                    {/* <img src={img} /> */}
                 </div>
                 {/* <h5>{name}</h5> */}
                 <div className="info">
