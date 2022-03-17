@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+//import Link from '@mui/material/Link';
 import {Link} from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
@@ -20,9 +21,9 @@ export default function ScrollableTabsButtonPrevent() {
           scrollButtons={false}
           aria-label="scrollable prevent tabs example"
         >
-          <Tab label="About us" to='/' component={Link}/>
-          <Tab label="Services" to='/services' component={Link} />
-          <Tab label="Therapies" to='/bodyTreatments'component={Link} />
+          <Link label="About us" to='/' ></Link>
+          <Link label="Services" to='/services' ></Link>
+          <Link label="Therapies" to='/bodyTreatments' ></Link>
           <Tab label="Item Four" />
           <Tab label="Item Five" />
           <Tab label="Item Six" />
