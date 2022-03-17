@@ -1,21 +1,27 @@
+import { Tab } from "@mui/material";
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 //import ToggleButton from '@mui/material/ToggleButton';
 import AuthCxt from '../../contexts/AuthCxt';
 //import ColorToggleButton from "./NavTab";
-
+//import TabsWrappedLabel from "./NavTabSec";
 
 
 const Navigation = () => {
 
  
 
-  const [isActive, setActive] = useState(false);
-  const [isGuestService, setGuestService] = useState(false);
+  const [isActive, setActive] = useState(true);
+  const [isGuestService, setGuestService] = useState(true);
 
   const toggleClass = () => {
-    
-    setActive(!isActive);
+   
+    if(isActive === true){
+     const newActive = false;
+      setActive(newActive);
+      
+    }
+ 
   };
 
   const toggGuestService = () => {
@@ -60,11 +66,11 @@ const Navigation = () => {
     <>
     <ul className="menu">
     <li >
-      <Link className={isActive ? 'active': null} 
+      <Link className={isActive ? 'noactive': 'active'} 
       onClick={toggleClass}  to="/" >About us</Link>
     </li>
     <li>
-      <Link className={isGuestService ? 'active': null} 
+      <Link className={isGuestService ? 'noactive': 'active'} 
       onClick={toggGuestService}  to="/services">Services</Link>
     </li>
     <li>
