@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 //import ToggleButton from '@mui/material/ToggleButton';
 import AuthCxt from '../../contexts/AuthCxt';
-import ScrollableTabsButtonPrevent from "./NavTab";
+//import ColorToggleButton from "./NavTab";
 
 
 
@@ -11,10 +11,16 @@ const Navigation = () => {
  
 
   const [isActive, setActive] = useState(false);
+  const [isGuestService, setGuestService] = useState(false);
 
   const toggleClass = () => {
+    
     setActive(!isActive);
   };
+
+  const toggGuestService = () => {
+    setGuestService(!isGuestService);
+  }
 
   let value = useContext(AuthCxt);
   let user = value.user.user;
@@ -58,7 +64,8 @@ const Navigation = () => {
       onClick={toggleClass}  to="/" >About us</Link>
     </li>
     <li>
-      <Link  to="/services">Services</Link>
+      <Link className={isGuestService ? 'active': null} 
+      onClick={toggGuestService}  to="/services">Services</Link>
     </li>
     <li>
       <Link  to="/bodyTreatments">Therapies</Link>
@@ -84,12 +91,14 @@ const Navigation = () => {
   );
 
   return (
+    
     <nav className="wrapper">
       {isAuth
       ? userNav
       : guestNav
       }
     </nav>
+    
   );
 };
 

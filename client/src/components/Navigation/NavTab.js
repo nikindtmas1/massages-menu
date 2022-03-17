@@ -1,34 +1,27 @@
-import React, {useState} from 'react';
-//import Link from '@mui/material/Link';
+import * as React from 'react';
 import {Link} from 'react-router-dom';
-import Box from '@mui/material/Box';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
+import ToggleButton from '@mui/material/ToggleButton';
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 
-export default function ScrollableTabsButtonPrevent() {
-    const [value, setValue] = useState(0);
-  
-    const handleChange = (event, newValue) => {
-      setValue(newValue);
-    };
-  
-    return (
-      <Box sx={{ maxWidth: { xs: 320, sm: 480 }, bgcolor: 'background.paper' }}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          variant="scrollable"
-          scrollButtons={false}
-          aria-label="scrollable prevent tabs example"
-        >
-          <Link label="About us" to='/' ></Link>
-          <Link label="Services" to='/services' ></Link>
-          <Link label="Therapies" to='/bodyTreatments' ></Link>
-          <Tab label="Item Four" />
-          <Tab label="Item Five" />
-          <Tab label="Item Six" />
-          <Tab label="Item Seven" />
-        </Tabs>
-      </Box>
-    );
-  }
+export default function ColorToggleButton() {
+  const [alignment, setAlignment] = React.useState('zero');
+
+  const handleChange = (event, newAlignment) => {
+    setAlignment(newAlignment);
+  };
+
+  return (
+    <ToggleButtonGroup
+      color="primary"
+      value={alignment}
+      exclusive
+      onChange={handleChange}
+    >
+      <ToggleButton value="one"><Link to='/'>About us</Link></ToggleButton>
+      <ToggleButton value="two"><Link to='/services'>Services</Link></ToggleButton>
+      <ToggleButton value="three"><Link to='/bodyTreatments'>Therapies</Link></ToggleButton>
+      <ToggleButton value="four"><Link to='/register'>Register</Link></ToggleButton>
+      <ToggleButton value="five"><Link to='/login'>Login</Link></ToggleButton>
+    </ToggleButtonGroup>
+  );
+}
