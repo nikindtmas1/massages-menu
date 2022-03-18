@@ -1,5 +1,5 @@
-import { Tab } from "@mui/material";
-import React, { useState, useContext } from "react";
+//import { Tab } from "@mui/material";
+import React, { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 //import ToggleButton from '@mui/material/ToggleButton';
 import AuthCxt from '../../contexts/AuthCxt';
@@ -11,18 +11,20 @@ const Navigation = () => {
 
  
 
-  const [isActive, setActive] = useState(true);
+  const [isActive, setActive] = useState(false);
   const [isGuestService, setGuestService] = useState(true);
 
   const toggleClass = () => {
    
-    if(isActive === true){
-     const newActive = false;
+    if(isActive === false){
+      console.log(isActive);
+     const newActive = true;
       setActive(newActive);
-      
+      console.log(isActive);
     }
  
   };
+
 
   const toggGuestService = () => {
     setGuestService(!isGuestService);
@@ -66,7 +68,7 @@ const Navigation = () => {
     <>
     <ul className="menu">
     <li >
-      <Link className={isActive ? 'noactive': 'active'} 
+      <Link className={isActive ? 'active': null} 
       onClick={toggleClass}  to="/" >About us</Link>
     </li>
     <li>
