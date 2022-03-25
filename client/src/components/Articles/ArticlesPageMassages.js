@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { CircularProgress } from '@material-ui/core';
+//import { CircularProgress } from '@material-ui/core';
 import { Box } from '@material-ui/core';
-
+import CircularIndeterminate from '../Circular/Circular';
 // export default function CircularIndeterminate() {
 //   return (
    
@@ -26,13 +26,15 @@ const ArticlesPageMassages = () => {
       <div className="wrapper p4">
         <div className='wrapper'>
           {
-          massages ?
+          massages.length > 0 
+          ?
           massages.map((massage) => (
             <MassageItems massage={massage} />
           ))
-          :  <Box sx={{ display: 'flex' }}>
-              <CircularProgress />
-            </Box>
+          :  <CircularIndeterminate />
+          // <Box sx={{ display: 'flex' }}>
+          //     <CircularProgress />
+          //   </Box>
           }
         </div>
       </div>
