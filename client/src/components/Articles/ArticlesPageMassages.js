@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 //import { CircularProgress } from '@material-ui/core';
-import { Box } from '@material-ui/core';
+//import { Box } from '@material-ui/core';
 import CircularIndeterminate from '../Circular/Circular';
 // export default function CircularIndeterminate() {
 //   return (
