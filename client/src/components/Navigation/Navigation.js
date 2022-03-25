@@ -17,19 +17,28 @@ const Navigation = () => {
   const toggleClass = (e) => {
   // e.preventDefault();
   
+  
    let currentActive = e.currentTarget.className
+   let target = e.currentTarget
+   let toggleItem = {...target, className: "active"}
+   setActive(
+     !isActive
+    //  toggleItem.className
+    )
+   console.log(toggleItem);
+   console.log(target);
    console.log(currentActive);
-   if(currentActive == 'noactive'){
-     currentActive = 'active';
-     let newState = true;
-     setActive(newState); 
+  //  if(currentActive == 'noactive'){
+  //    currentActive = 'active';
+  //    let newState = true;
+  //    setActive(newState); 
      
-   }else{
-     currentActive = 'noactive';
-     let nextState = false;
-     setActive(nextState);
+  //  }else{
+  //    currentActive = 'noactive';
+  //    let nextState = false;
+  //    setActive(nextState);
      
-   }
+  //  }
    
     console.log(isActive);
   };
@@ -76,12 +85,12 @@ const Navigation = () => {
   let userNav = (
     <>
     <ul className="menu">
-    <li >
-      <Link className={isActive ? 'active' : 'noactive'} 
+    <li  >
+      <Link id="one" className={isActive ? 'active' : ''} 
       onClick={toggleClass}  to="/" >About us</Link>
     </li>
     <li>
-      <Link className={isGuestService ? 'noactive': 'active'} 
+      <Link id="two" className={isGuestService ? 'noactive': 'active'} 
       onClick={toggGuestService}  to="/services">Services</Link>
     </li>
     <li>
