@@ -12,13 +12,14 @@ const Navigation = () => {
 
  
 
-  const [isActive, setActive] = useState(true);
+  const [isActive, setActive] = useState(false);
   const [isGuestService, setGuestService] = useState(true);
 
+  
   const toggleClass = () => {
   // e.preventDefault();
   
-  
+
   //  let currentActive = e.currentTarget.className
   //  let target = e.currentTarget
   //  let toggleItem = {...target, className: "active"}
@@ -44,6 +45,7 @@ const Navigation = () => {
     //console.log(isActive);
   };
 
+  
 
   const toggGuestService = () => {
     setGuestService(!isGuestService);
@@ -87,7 +89,7 @@ const Navigation = () => {
     <>
     <ul className="menu">
     <li  >
-      <Link id="one"  className={isActive ? 'noactive' : 'active'}
+      <Link id="one"  className={isActive ? 'active' : ''}
       onClick={toggleClass}  to="/" >About us</Link>
     </li>
     <li>

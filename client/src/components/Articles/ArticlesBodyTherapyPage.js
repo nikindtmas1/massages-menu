@@ -12,11 +12,11 @@ const ArticlesBodyTherapyPage = () => {
     const [bodyTherapies, setBodyTherapies] = useState([]);
 
     useEffect(() => {
-      setTimeout(() => {
+      
 
         services.getAllBodyTherapy()
         .then((result) => setBodyTherapies(result))
-      }, 3000)
+   
      
     }, []);
 
