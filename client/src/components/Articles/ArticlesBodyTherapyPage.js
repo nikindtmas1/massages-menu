@@ -13,9 +13,12 @@ const ArticlesBodyTherapyPage = () => {
 
     useEffect(() => {
       
+      setTimeout(() => {
 
         services.getAllBodyTherapy()
         .then((result) => setBodyTherapies(result))
+      }, 1000)
+       
    
      
     }, []);
@@ -26,15 +29,14 @@ const ArticlesBodyTherapyPage = () => {
     <div className="wrapper p4">
       <div className='wraper'>
         {
-        !bodyTherapies ?
-          <CircularIndeterminate />
-          : 
-          bodyTherapies.map((bodyTherapy) => (
+        bodyTherapies.length > 0 
+        ? bodyTherapies.map((bodyTherapy) => (
 
             <BodyTherapyItems bodyTherapy={bodyTherapy} />
   
           ))
-        
+          :
+          <CircularIndeterminate />
       }
       </div>
     </div>
