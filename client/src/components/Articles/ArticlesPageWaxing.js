@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Grid } from "@material-ui/core";
 
+import CircularIndeterminate from '../Circular/Circular';
 //import {Link} from 'react-router-dom';
 import WaxingItems from '../WaxingItems/WaxingItems';
 import * as services from '../Services/data';
@@ -25,11 +26,16 @@ const ArticlesPageWaxing = () => {
                 <main className={classes.content}>
                     <div className={classes.toolbar} />
                     <Grid container justifyContent='center' spacing={4}>
-                        {waxTherapies.map((waxTherapy) => (
+                        {waxTherapies.length > 0
+                        ?
+                        waxTherapies.map((waxTherapy) => (
                             <Grid item key={waxTherapy.id} xs={12} sm={6} md={4} lg={3}>
                                 <WaxingItems waxTherapy={waxTherapy} />
                             </Grid>
-                        ))}
+                        ))
+                        : 
+                        <CircularIndeterminate />
+                    }
                     </Grid>
                 </main>
 
