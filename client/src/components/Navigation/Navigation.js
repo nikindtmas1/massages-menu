@@ -13,7 +13,7 @@ const Navigation = () => {
  
 
   const [isActive, setActive] = useState(false);
-  const [isGuestService, setGuestService] = useState(true);
+  const [isGuestService, setGuestService] = useState(false);
 
   
   const toggleClass = () => {
@@ -93,7 +93,7 @@ const Navigation = () => {
       onClick={toggleClass}  to="/" >About us</Link>
     </li>
     <li>
-      <Link id="two" className={isGuestService ? 'noactive': 'active'} 
+      <Link id="two" className={isGuestService ? 'active': ''} 
       onClick={toggGuestService}  to="/services">Services</Link>
     </li>
     <li>
