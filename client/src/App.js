@@ -5,6 +5,7 @@ import AuthCxt from './contexts/AuthCxt';
 import * as userServices from './components/Services/authService';
 
 //import Header from './components/Header/Header';
+//import Footer from './components/Footer/Footer';
 import PageOne from "./components/PageOne/PageOne";
 import PageTwo from './components/PageTwo/PageTwo';
 import PageThree from './components/PageThree/PageThree';
@@ -56,9 +57,29 @@ function App() {
 
   };
 
+  // const [pageInfo, setPageInfo] = useState('');
+  
+  // const location = useLocation();
+  // let pathName = location.pathname;
+
+  // useEffect(() => {
+  //   if(pathName === '/'){
+  //     setPageInfo('page1')
+  //   }else if(pathName === '/services'){
+  //     setPageInfo('page2')
+  //   }else if(pathName === '/therapies'){
+  //     setPageInfo('page3')
+  //   }else if(pathName === '/staff'){
+  //     setPageInfo('page4')
+  //   }else if(pathName === '/contacts'){
+  //     setPageInfo('page5')
+  //   }
+  // },[pathName]);
+
   return (
     <AuthCxt.Provider value={{ user: userInfo, onLogin, onLogout }}>
-     
+     {/* <div id={pageInfo}> */}
+    
        {/* <Header /> */}
     <Switch>
       <Route path='/' exact component={PageOne} />
@@ -74,7 +95,8 @@ function App() {
       <Route path='/logout' component={Logout} />
       <Route path='/waxing' component={Waxing} />
     </Switch>
-
+    {/* <Footer /> */}
+    {/* </div> */}
     </AuthCxt.Provider>
   );
 }
