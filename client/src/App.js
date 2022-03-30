@@ -4,6 +4,7 @@ import AuthCxt from './contexts/AuthCxt';
 
 import * as userServices from './components/Services/authService';
 
+//import Header from './components/Header/Header';
 import PageOne from "./components/PageOne/PageOne";
 import PageTwo from './components/PageTwo/PageTwo';
 import PageThree from './components/PageThree/PageThree';
@@ -57,6 +58,8 @@ function App() {
 
   return (
     <AuthCxt.Provider value={{ user: userInfo, onLogin, onLogout }}>
+     
+       {/* <Header /> */}
     <Switch>
       <Route path='/' exact component={PageOne} />
       <Route path='/services' component={PageTwo} />
@@ -71,6 +74,7 @@ function App() {
       <Route path='/logout' component={Logout} />
       <Route path='/waxing' component={Waxing} />
     </Switch>
+
     </AuthCxt.Provider>
   );
 }

@@ -6,6 +6,7 @@ import AsidePageOne from '../Asides/AsidePageOne';
 
 const PageOne = () => {
   return (
+    <>
     <div id="page1">
         <div className="bg">
             <Header />
@@ -14,6 +15,7 @@ const PageOne = () => {
         <AsidePageOne />
         <Footer />
     </div>
+    </>
   )
 }
 

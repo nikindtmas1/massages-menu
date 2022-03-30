@@ -7,12 +7,14 @@ import AsidePageTwo from '../Asides/AsidePageTwo';
 const PageTwo = () => {
   return (
     <div id="page2">
+  
         <div className='bg'>
             <Header />
             <SectionPageTwo />
         </div>
         <AsidePageTwo />
         <Footer />
+      
     </div>
   )
 }
