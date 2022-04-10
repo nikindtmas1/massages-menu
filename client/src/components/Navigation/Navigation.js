@@ -19,7 +19,7 @@ const Navigation = () => {
   const toggleClass = () => {
   // e.preventDefault();
   
-
+  setGuestService(false)
   //  let currentActive = e.currentTarget.className
   //  let target = e.currentTarget
   //  let toggleItem = {...target, className: "active"}
@@ -48,6 +48,7 @@ const Navigation = () => {
   
 
   const toggGuestService = () => {
+    setActive(false);
     setGuestService(!isGuestService);
   }
 
