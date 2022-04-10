@@ -79,7 +79,7 @@ function App() {
   return (
     <AuthCxt.Provider value={{ user: userInfo, onLogin, onLogout }}>
      {/* <div id={pageInfo}> */}
-    
+        <div className="bg">
        {/* <Header /> */}
     <Switch>
       <Route path='/' exact component={PageOne} />
@@ -95,6 +95,7 @@ function App() {
       <Route path='/logout' component={Logout} />
       <Route path='/waxing' component={Waxing} />
     </Switch>
+    </div>
     {/* <Footer /> */}
     {/* </div> */}
     </AuthCxt.Provider>
