@@ -1,11 +1,11 @@
 import {useState, useEffect} from 'react';
-import {Route, Switch} from 'react-router-dom';
+import {Route, Switch, useLocation} from 'react-router-dom';
 import AuthCxt from './contexts/AuthCxt';
 
 import * as userServices from './components/Services/authService';
 
-//import Header from './components/Header/Header';
-//import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import PageOne from "./components/PageOne/PageOne";
 import PageTwo from './components/PageTwo/PageTwo';
 import PageThree from './components/PageThree/PageThree';
@@ -18,6 +18,9 @@ import BodyTherapies from './components/BodyTherapies/BodyTherapies';
 import FaceCare from './components/FaceCare/FaceCare';
 import Logout from './components/Logout/Logout';
 import Waxing from './components/Waxing/Waxing';
+
+import AsidePageOne from './components/Asides/AsidePageOne';
+import AsidePageTwo from './components/Asides/AsidePageTwo';
 
 function App() {
 
@@ -57,30 +60,32 @@ function App() {
 
   };
 
-  // const [pageInfo, setPageInfo] = useState('');
+  const [pageInfo, setPageInfo] = useState('');
   
-  // const location = useLocation();
-  // let pathName = location.pathname;
+  const location = useLocation();
+  let pathName = location.pathname;
 
-  // useEffect(() => {
-  //   if(pathName === '/'){
-  //     setPageInfo('page1')
-  //   }else if(pathName === '/services'){
-  //     setPageInfo('page2')
-  //   }else if(pathName === '/therapies'){
-  //     setPageInfo('page3')
-  //   }else if(pathName === '/staff'){
-  //     setPageInfo('page4')
-  //   }else if(pathName === '/contacts'){
-  //     setPageInfo('page5')
-  //   }
-  // },[pathName]);
+  useEffect(() => {
+    if(pathName === '/'){
+      setPageInfo('page1')
+    }else if(pathName === '/services'){
+      setPageInfo('page2')
+    }else if(pathName === '/therapies'){
+      setPageInfo('page3')
+    }else if(pathName === '/staff'){
+      setPageInfo('page4')
+    }else if(pathName === '/contacts'){
+      setPageInfo('page5')
+    }
+  },[pathName]);
+
+ 
 
   return (
     <AuthCxt.Provider value={{ user: userInfo, onLogin, onLogout }}>
-     {/* <div id={pageInfo}> */}
+     <div id={pageInfo}>
         <div className="bg">
-       {/* <Header /> */}
+       <Header />
     <Switch>
       <Route path='/' exact component={PageOne} />
       <Route path='/services' component={PageTwo} />
@@ -96,8 +101,12 @@ function App() {
       <Route path='/waxing' component={Waxing} />
     </Switch>
     </div>
-    {/* <Footer /> */}
-    {/* </div> */}
+    <Switch>
+      <Route path='/' exact ><AsidePageOne /> </Route>
+      <Route path='/services'><AsidePageTwo /></Route>
+    </Switch>
+    <Footer />
+    </div>
     </AuthCxt.Provider>
   );
 }
