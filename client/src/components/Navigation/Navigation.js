@@ -60,10 +60,12 @@ const Navigation = () => {
    
     <ul className="menu">
     <li >
-      <Link className=""  to="/">About us</Link>
+      <Link className={isActive ? 'active' : ''}
+      onClick={toggleClass}  to="/">About us</Link>
     </li>
     <li>
-      <Link to="/services">Services</Link>
+      <Link className={isGuestService ? 'active': ''} 
+      onClick={toggGuestService} to="/services">Services</Link>
     </li>
     <li>
       <Link to="/bodyTreatments">Therapies</Link>
