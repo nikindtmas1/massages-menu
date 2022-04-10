@@ -1,14 +1,14 @@
 import React from 'react';
-import Header from '../Header/Header';
+//import Header from '../Header/Header';
 import SectionPageTwo from '../Sections/SectionPageTwo';
-import Footer from '../Footer/Footer';
-import AsidePageTwo from '../Asides/AsidePageTwo';
+//import Footer from '../Footer/Footer';
+//import AsidePageTwo from '../Asides/AsidePageTwo';
 
 const PageTwo = () => {
   return (
 <>
-
-    <div id="page2">
+    <SectionPageTwo />
+    {/* <div id="page2">
   
         <div className='bg'>
             <Header />
@@ -17,7 +17,7 @@ const PageTwo = () => {
         <AsidePageTwo />
         <Footer />
       
-    </div>
+    </div> */}
     </>
   )
 }
