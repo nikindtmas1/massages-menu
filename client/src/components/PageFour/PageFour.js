@@ -5,13 +5,16 @@ import Footer from '../Footer/Footer';
 
 const PageFour = () => {
   return (
-    <div id='page4'>
-        <div className='bg'>
-            <Header />
-            <SectionPageFour />
-        </div>
-        <Footer />
-    </div>
+
+    <SectionPageFour />
+
+    // <div id='page4'>
+    //     <div className='bg'>
+    //         <Header />
+    //         <SectionPageFour />
+    //     </div>
+    //     <Footer />
+    // </div>
   )
 }
 
