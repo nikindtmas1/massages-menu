@@ -86,6 +86,10 @@ function App() {
       setPageInfo('page3')
     }else if(pathName === '/waxing'){
       setPageInfo('page3')
+    }else if(pathName === '/bodyTreatments'){
+      setPageInfo('page3')
+    }else if(pathName === '/register'){
+      setPageInfo('page3')
     }
   },[pathName]);
 
