@@ -6,14 +6,17 @@ import Footer from '../Footer/Footer';
 
 const PageFive = () => {
   return (
-    <div id='page5'>
-        <div className='bg'>
-            <Header />
-            <SectionPageFive />
-        </div>
-        <AsidePageFive />
-        <Footer />
-    </div>
+
+    <SectionPageFive />
+
+    // <div id='page5'>
+    //     <div className='bg'>
+    //         <Header />
+    //         <SectionPageFive />
+    //     </div>
+    //     <AsidePageFive />
+    //     <Footer />
+    // </div>
   )
 }
 
