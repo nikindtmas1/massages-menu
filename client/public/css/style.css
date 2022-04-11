@@ -171,7 +171,7 @@ header {
 }
 .menu li a {
 	display:block;
-	width:122px;
+	width:90px;
 	font-size:20px;
 	line-height:2em;
 	font-weight:350;
@@ -193,7 +193,7 @@ header {
 	-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.8);
 	-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 9)
 }
-/* .menu li.active, .menu li:hover {
+/* .menu li .noactive, .menu li:hover {
 	color:#fff;
 	background-position:left top;
 	background-color: #171717;
