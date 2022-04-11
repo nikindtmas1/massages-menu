@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+//import Header from '../Header/Header';
+//import Footer from '../Footer/Footer';
 import SectionWaxingPage from '../Sections/SectionWaxingPage';
 
 
@@ -9,13 +9,16 @@ const Waxing = () => {
   
 
   return (
-    <div id='page3'>
-        <div className='bg'>
-            <Header />
-            <SectionWaxingPage />
-        </div>
-        <Footer />
-    </div>
+
+    <SectionWaxingPage />
+
+    // <div id='page3'>
+    //     <div className='bg'>
+    //         <Header />
+    //         <SectionWaxingPage />
+    //     </div>
+    //     <Footer />
+    // </div>
   )
 }
 
