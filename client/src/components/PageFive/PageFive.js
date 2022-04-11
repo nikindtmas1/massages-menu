@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from '../Header/Header';
+//import Header from '../Header/Header';
 import SectionPageFive from '../Sections/SectionPageFive';
-import AsidePageFive from '../Asides/AsidePageFive';
-import Footer from '../Footer/Footer';
+//import AsidePageFive from '../Asides/AsidePageFive';
+//import Footer from '../Footer/Footer';
 
 const PageFive = () => {
   return (

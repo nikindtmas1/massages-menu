@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../Header/Header';
+//import Header from '../Header/Header';
 import SectionPageFour from '../Sections/SectionPageFour';
-import Footer from '../Footer/Footer';
+//import Footer from '../Footer/Footer';
 
 const PageFour = () => {
   return (

@@ -61,6 +61,7 @@ const Navigation = () => {
 
   const [isActive, setActive] = useState(false);
   const [isGuestService, setGuestService] = useState(false);
+  const [isTherapies, setIsTherapies] = useState(false);
 
   
   const toggleClass = () => {
@@ -73,7 +74,9 @@ const Navigation = () => {
    setActive(
      !isActive
     //  toggleItem.className
-    )
+    );
+
+    setIsTherapies(false);
    //console.log(toggleItem);
    //console.log(target);
    //console.log(currentActive);
@@ -97,6 +100,13 @@ const Navigation = () => {
   const toggGuestService = () => {
     setActive(false);
     setGuestService(!isGuestService);
+    setIsTherapies(false);
+  };
+
+  const toggTherapies = () => {
+    setActive(false);
+    setGuestService(false);
+    setIsTherapies(!isTherapies);
   }
 
   let value = useContext(AuthCxt);
@@ -115,7 +125,8 @@ const Navigation = () => {
       onClick={toggGuestService} to="/services">Services</Link>
     </li>
     <li>
-      <Link to="/bodyTreatments">Therapies</Link>
+      <Link className={isTherapies ? 'active': ''} 
+      onClick={toggTherapies} to="/bodyTreatments">Therapies</Link>
     </li>
     {/* <li>
       <Link to="/staff">Our Staff</Link>

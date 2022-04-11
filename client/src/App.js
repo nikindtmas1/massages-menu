@@ -106,7 +106,7 @@ function App() {
     <Switch>
       <Route path='/' exact ><AsidePageOne /> </Route>
       <Route path='/services'><AsidePageTwo /></Route>
-      <Rout path='/contacts'><AsidePageFive /></Rout>
+      <Route path='/contacts'><AsidePageFive /></Route>
     </Switch>
     <Footer />
     </div>
