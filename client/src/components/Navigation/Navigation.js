@@ -64,6 +64,8 @@ const Navigation = () => {
   const [isTherapies, setIsTherapies] = useState(false);
   const [isLogin, setIsLogin] = useState(false);
   const [isRegister, setIsRegister] = useState(false);
+  const [isStaff, setIsStaff] = useState(false);
+  const [isContacts, setIsContacts] = useState(false);
 
   
   const toggleClass = () => {
@@ -81,6 +83,8 @@ const Navigation = () => {
     setIsTherapies(false);
     setIsLogin(false);
     setIsRegister(false);
+    setIsContacts(false);
+    setIsStaff(false);
    //console.log(toggleItem);
    //console.log(target);
    //console.log(currentActive);
@@ -105,6 +109,8 @@ const Navigation = () => {
     setActive(false);
     setIsLogin(false);
     setIsRegister(false);
+    setIsContacts(false);
+    setIsStaff(false);
     setGuestService(!isGuestService);
     setIsTherapies(false);
   };
@@ -114,6 +120,8 @@ const Navigation = () => {
     setGuestService(false);
     setIsLogin(false);
     setIsRegister(false);
+    setIsContacts(false);
+    setIsStaff(false);
     setIsTherapies(!isTherapies);
   };
 
@@ -122,6 +130,8 @@ const Navigation = () => {
     setGuestService(false);
     setIsTherapies(false);
     setIsRegister(false);
+    setIsContacts(false);
+    setIsStaff(false);
     setIsLogin(!isLogin);
   };
 
@@ -130,7 +140,29 @@ const Navigation = () => {
     setGuestService(false);
     setIsTherapies(false);
     setIsLogin(false);
+    setIsContacts(false);
+    setIsStaff(false);
     setIsRegister(!isRegister);
+  };
+
+  const toggStaff = () => {
+    setActive(false);
+    setGuestService(false);
+    setIsTherapies(false);
+    setIsLogin(false);
+    setIsRegister(false);
+    setIsContacts(false);
+    setIsStaff(!isStaff);
+  };
+
+  const toggContacts = () => {
+    setActive(false);
+    setGuestService(false);
+    setIsTherapies(false);
+    setIsLogin(false);
+    setIsRegister(false);
+    setIsStaff(false);
+    setIsContacts(!isContacts);
   }
 
   let value = useContext(AuthCxt);
@@ -197,13 +229,16 @@ const Navigation = () => {
       onClick={toggGuestService}  to="/services">Services</Link>
     </li>
     <li>
-      <Link  to="/bodyTreatments">Therapies</Link>
+      <Link className={isTherapies ? 'active': ''} 
+      onClick={toggTherapies}  to="/bodyTreatments">Therapies</Link>
     </li>
     <li>
-      <Link  to="/staff">Our Staff</Link>
+      <Link className={isStaff ? 'active': ''} 
+      onClick={toggStaff}  to="/staff">Our Staff</Link>
     </li>
     <li>
-      <Link  to="/contacts">Contacts</Link>
+      <Link className={isContacts ? 'active': ''} 
+      onClick={toggContacts}  to="/contacts">Contacts</Link>
     </li>
     {/* <li >
       <Link to="/register">Register</Link>
