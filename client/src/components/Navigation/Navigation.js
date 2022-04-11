@@ -1,17 +1,11 @@
-//import { Tab } from "@mui/material";
-//import { Search } from "@material-ui/icons";
 import { styled, alpha } from '@mui/material/styles';
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
-//import ToggleButton from '@mui/material/ToggleButton';
+
 import AuthCxt from '../../contexts/AuthCxt';
 import SearchIcon from '@mui/icons-material/Search';
 import InputBase from '@mui/material/InputBase';
 
-
-//import styles from './Navigation.module.css';
-//import ColorToggleButton from "./NavTab";
-//import TabsWrappedLabel from "./NavTabSec";
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -57,8 +51,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 const Navigation = () => {
 
- 
-
   const [isActive, setActive] = useState(false);
   const [isGuestService, setGuestService] = useState(false);
   const [isTherapies, setIsTherapies] = useState(false);
@@ -69,38 +61,13 @@ const Navigation = () => {
 
   
   const toggleClass = () => {
-  // e.preventDefault();
-  
-  setGuestService(false)
-  //  let currentActive = e.currentTarget.className
-  //  let target = e.currentTarget
-  //  let toggleItem = {...target, className: "active"}
-   setActive(
-     !isActive
-    //  toggleItem.className
-    );
-
+    setGuestService(false)
+    setActive(!isActive);
     setIsTherapies(false);
     setIsLogin(false);
     setIsRegister(false);
     setIsContacts(false);
     setIsStaff(false);
-   //console.log(toggleItem);
-   //console.log(target);
-   //console.log(currentActive);
-  //  if(currentActive == 'noactive'){
-  //    currentActive = 'active';
-  //    let newState = true;
-  //    setActive(newState); 
-     
-  //  }else{
-  //    currentActive = 'noactive';
-  //    let nextState = false;
-  //    setActive(nextState);
-     
-  //  }
-   
-    //console.log(isActive);
   };
 
   
@@ -195,12 +162,6 @@ const Navigation = () => {
       <Link className={isTherapies ? 'active': ''} 
       onClick={toggTherapies} to="/bodyTreatments">Therapies</Link>
     </li>
-    {/* <li>
-      <Link to="/staff">Our Staff</Link>
-    </li>
-    <li>
-      <Link to="/contacts">Contacts</Link>
-    </li> */}
     <li >
       <Link className={isRegister ? 'active': ''} 
       onClick={toggRegister} to="/register">Register</Link>
@@ -209,11 +170,6 @@ const Navigation = () => {
       <Link className={isLogin ? 'active': ''} 
       onClick={toggLogin} to="/login">Login</Link>
     </li>
-    {/* <li >
-      <Link to="/logout">Logout</Link>
-    </li> */}
-     
-       
           </ul>
   </>
   );
@@ -252,12 +208,6 @@ const Navigation = () => {
       <Link className={isContacts ? 'active': ''} 
       onClick={toggContacts}  to="/contacts">Contacts</Link>
     </li>
-    {/* <li >
-      <Link to="/register">Register</Link>
-      </li>
-      <li >
-      <Link to="/login">Login</Link>
-    </li> */}
     <li >
       <Link to="/logout">Logout</Link>
     </li>
