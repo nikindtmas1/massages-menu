@@ -172,6 +172,17 @@ const Navigation = () => {
   let guestNav = (
    <>
     <ul className="menu">
+    <li style={{'padding':'30px'}}>
+      <Search>
+            <SearchIconWrapper>
+              <SearchIcon />
+            </SearchIconWrapper>
+            <StyledInputBase
+              placeholder="Find by type"
+              inputProps={{ 'aria-label': 'search' }}
+            />
+          </Search>
+      </li>
     <li >
       <Link className={isActive ? 'active' : ''}
       onClick={toggleClass}  to="/">About us</Link>
@@ -201,17 +212,7 @@ const Navigation = () => {
     {/* <li >
       <Link to="/logout">Logout</Link>
     </li> */}
-      <li style={{'padding':'30px'}}>
-      <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search>
-      </li>
+     
        
           </ul>
   </>
@@ -220,6 +221,17 @@ const Navigation = () => {
   let userNav = (
     <>
     <ul className="menu">
+    <li style={{'padding':'30px'}}>
+      <Search>
+            <SearchIconWrapper>
+              <SearchIcon />
+            </SearchIconWrapper>
+            <StyledInputBase
+              placeholder="Find by type"
+              inputProps={{ 'aria-label': 'search' }}
+            />
+          </Search>
+      </li>
     <li  >
       <Link id="one"  className={isActive ? 'active' : ''}
       onClick={toggleClass}  to="/" >About us</Link>
@@ -249,17 +261,7 @@ const Navigation = () => {
     <li >
       <Link to="/logout">Logout</Link>
     </li>
-    {/* <li style={{'padding':'30px'}}>
-      <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search>
-      </li> */}
+    
   </ul>
     <span style={{"margin": "20px", "padding": "20px", "display": "flex"}}>Welcome: {user}</span>
     </>
