@@ -62,6 +62,8 @@ const Navigation = () => {
   const [isActive, setActive] = useState(false);
   const [isGuestService, setGuestService] = useState(false);
   const [isTherapies, setIsTherapies] = useState(false);
+  const [isLogin, setIsLogin] = useState(false);
+  const [isRegister, setIsRegister] = useState(false);
 
   
   const toggleClass = () => {
@@ -77,6 +79,8 @@ const Navigation = () => {
     );
 
     setIsTherapies(false);
+    setIsLogin(false);
+    setIsRegister(false);
    //console.log(toggleItem);
    //console.log(target);
    //console.log(currentActive);
@@ -99,6 +103,8 @@ const Navigation = () => {
 
   const toggGuestService = () => {
     setActive(false);
+    setIsLogin(false);
+    setIsRegister(false);
     setGuestService(!isGuestService);
     setIsTherapies(false);
   };
@@ -106,7 +112,25 @@ const Navigation = () => {
   const toggTherapies = () => {
     setActive(false);
     setGuestService(false);
+    setIsLogin(false);
+    setIsRegister(false);
     setIsTherapies(!isTherapies);
+  };
+
+  const toggLogin = () => {
+    setActive(false);
+    setGuestService(false);
+    setIsTherapies(false);
+    setIsRegister(false);
+    setIsLogin(!isLogin);
+  };
+
+  const toggRegister = () => {
+    setActive(false);
+    setGuestService(false);
+    setIsTherapies(false);
+    setIsLogin(false);
+    setIsRegister(!isRegister);
   }
 
   let value = useContext(AuthCxt);
@@ -135,10 +159,12 @@ const Navigation = () => {
       <Link to="/contacts">Contacts</Link>
     </li> */}
     <li >
-      <Link to="/register">Register</Link>
+      <Link className={isRegister ? 'active': ''} 
+      onClick={toggRegister} to="/register">Register</Link>
     </li>
     <li >
-      <Link to="/login">Login</Link>
+      <Link className={isLogin ? 'active': ''} 
+      onClick={toggLogin} to="/login">Login</Link>
     </li>
     {/* <li >
       <Link to="/logout">Logout</Link>
