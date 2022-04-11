@@ -5,13 +5,16 @@ import SectionPageThree from "../Sections/SectionPageThree";
 
 const PageThree = () => {
   return (
-    <div id="page3">
-      <div className="bg">
-        <Header />
-        <SectionPageThree />
-      </div>
-      <Footer />
-    </div>
+
+    <SectionPageThree />
+
+    // <div id="page3">
+    //   <div className="bg">
+    //     <Header />
+    //     <SectionPageThree />
+    //   </div>
+    //   <Footer />
+    // </div>
   );
 };
 
