@@ -21,6 +21,8 @@ import Waxing from './components/Waxing/Waxing';
 
 import AsidePageOne from './components/Asides/AsidePageOne';
 import AsidePageTwo from './components/Asides/AsidePageTwo';
+import AsidePageFive from './components/Asides/AsidePageFive';
+
 
 function App() {
 
@@ -104,6 +106,7 @@ function App() {
     <Switch>
       <Route path='/' exact ><AsidePageOne /> </Route>
       <Route path='/services'><AsidePageTwo /></Route>
+      <Rout path='/contacts'><AsidePageFive /></Rout>
     </Switch>
     <Footer />
     </div>
