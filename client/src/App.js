@@ -78,6 +78,14 @@ function App() {
       setPageInfo('page4')
     }else if(pathName === '/contacts'){
       setPageInfo('page5')
+    }else if(pathName === '/login'){
+      setPageInfo('page3')
+    }else if(pathName === '/bodyMassages'){
+      setPageInfo('page3')
+    }else if(pathName === '/faceCare'){
+      setPageInfo('page3')
+    }else if(pathName === '/waxing'){
+      setPageInfo('page3')
     }
   },[pathName]);
 
