@@ -1,6 +1,8 @@
 import { styled, alpha } from '@mui/material/styles';
 import React, { useState, useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+
+import * as service from '../Services/data';
 
 import AuthCxt from '../../contexts/AuthCxt';
 import SearchIcon from '@mui/icons-material/Search';
@@ -50,6 +52,8 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 const Navigation = () => {
+
+  const history = useHistory();
 
   const [isActive, setActive] = useState(false);
   const [isGuestService, setGuestService] = useState(false);
@@ -130,7 +134,36 @@ const Navigation = () => {
     setIsRegister(false);
     setIsStaff(false);
     setIsContacts(!isContacts);
-  }
+  };
+
+  const onSubmit = (e) => {
+    e.preventDefault()
+
+    let formData = new FormData(e.currentTarget);
+    let dataMassages = formData.get('massages');
+
+    if (dataMassages === '') {
+        return alert('All fields are required!');
+    }
+
+    if(dataMassages === 'body'){
+      
+    service.getAll()
+        // .then(result => result.filter(x => x.name.toUpperCase() === destination.toUpperCase()))
+        .then(() => history.push(`/bodyMassages`))
+        .catch(err => alert(err.message))
+
+       
+      };
+
+      if(dataMassages === 'face'){
+
+        service.getAllFaces()
+        .then(() => history.push('/faceCare'))
+        .catch(err => alert(err.message))
+      }
+
+};
 
   let value = useContext(AuthCxt);
   let user = value.user.user;
@@ -145,8 +178,8 @@ const Navigation = () => {
             </SearchIconWrapper>
       </li>
             
-    <li style={{'paddingTop':'30px', 'paddingLeft': '20px'}}>
-      <form>
+    <li style={{'paddingTop':'30px', 'paddingLeft': '20px', 'paddingRight': '8px'}}>
+      <form onSubmit={onSubmit} method='get' action=''>
         <div>
         <input name="massages" type="text" className="" id="input" placeholder="Find by type"></input>
         </div>
