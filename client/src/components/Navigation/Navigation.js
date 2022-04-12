@@ -144,7 +144,13 @@ const Navigation = () => {
 
     if (dataMassages === '') {
         return alert('All fields are required!');
-    }
+    };
+
+    if(dataMassages !== 'body' && dataMassages !== 'face'){
+      alert('Write "body" or "face" please!');
+    };
+
+
 
     if(dataMassages.toLowerCase() === 'body'){
       
