@@ -139,8 +139,22 @@ const Navigation = () => {
   let guestNav = (
    <>
     <ul className="menu">
-    <li style={{'padding':'30px'}}>
-      <Search>
+      <li style={{'paddingTop':'30px', 'paddingRight': '20px'}}>
+           <SearchIconWrapper>
+              <SearchIcon />
+            </SearchIconWrapper>
+      </li>
+            
+    <li style={{'paddingTop':'30px', 'paddingLeft': '20px'}}>
+      <form>
+        <div>
+        <input name="massages" type="text" className="" id="input" placeholder="Find by type"></input>
+        </div>
+        <div style={{'padding': '10px', 'marginLeft': '40px'}}>
+        <input type='submit'></input>
+        </div>
+      </form>
+      {/* <Search>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
@@ -148,7 +162,7 @@ const Navigation = () => {
               placeholder="Find by type"
               inputProps={{ 'aria-label': 'search' }}
             />
-          </Search>
+          </Search> */}
       </li>
     <li >
       <Link className={isActive ? 'active' : ''}
