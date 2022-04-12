@@ -153,7 +153,7 @@ const Navigation = () => {
         .then(() => history.push(`/bodyMassages`))
         .catch(err => alert(err.message))
 
-       
+          
       };
 
       if(dataMassages.toLowerCase() === 'face'){
@@ -179,13 +179,17 @@ const Navigation = () => {
       </li>
             
     <li style={{'paddingTop':'30px', 'paddingLeft': '20px', 'paddingRight': '8px'}}>
-      <form onSubmit={onSubmit} method='get' action=''>
+      <form onSubmit={onSubmit} method='get' action='' id='massageData'>
         <div>
         <input name="massages" type="text" className="" id="input" placeholder="Find by type"></input>
         </div>
-        <div style={{'padding': '10px', 'marginLeft': '40px'}}>
+        <div style={{'padding': '10px', 'marginLeft': '20px'}}>
         <input type='submit'></input>
-        </div>
+        
+        <input type="reset" value="Reset" 
+                style={{"background-color": "red", 
+                "color": "white"}} />
+                </div>
       </form>
 
       </li>
@@ -228,9 +232,13 @@ const Navigation = () => {
         <div>
         <input name="massages" type="text" className="" id="input" placeholder="Find by type"></input>
         </div>
-        <div style={{'padding': '10px', 'marginLeft': '40px'}}>
+        <div style={{'padding': '10px', 'marginLeft': '20px'}}>
         <input type='submit'></input>
-        </div>
+        
+        <input type="reset" value="Reset" 
+                style={{"background-color": "red", 
+                        "color": "white"}} />
+                        </div>
       </form>
 
       </li>
