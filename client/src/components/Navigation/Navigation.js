@@ -146,7 +146,7 @@ const Navigation = () => {
         return alert('All fields are required!');
     }
 
-    if(dataMassages === 'body'){
+    if(dataMassages.toLowerCase() === 'body'){
       
     service.getAll()
         // .then(result => result.filter(x => x.name.toUpperCase() === destination.toUpperCase()))
@@ -156,7 +156,7 @@ const Navigation = () => {
        
       };
 
-      if(dataMassages === 'face'){
+      if(dataMassages.toLowerCase() === 'face'){
 
         service.getAllFaces()
         .then(() => history.push('/faceCare'))
