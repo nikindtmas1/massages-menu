@@ -181,7 +181,7 @@ const Navigation = () => {
     <li style={{'paddingTop':'30px', 'paddingLeft': '20px', 'paddingRight': '8px'}}>
       <form onSubmit={onSubmit} method='get' action='' id='massageData'>
         <div>
-        <input name="massages" type="text" className="" id="input" placeholder="Find by type"></input>
+        <input name="massages" type="text" className="" id="input" placeholder="Find body or face"></input>
         </div>
         <div style={{'padding': '10px', 'marginLeft': '20px'}}>
         <input type='submit'></input>
@@ -230,7 +230,7 @@ const Navigation = () => {
     <li style={{'paddingTop':'30px', 'paddingLeft': '20px', 'paddingRight': '8px'}}>
       <form onSubmit={onSubmit} method='get' action=''>
         <div>
-        <input name="massages" type="text" className="" id="input" placeholder="Find by type"></input>
+        <input name="massages" type="text" className="" id="input" placeholder="Find body or face"></input>
         </div>
         <div style={{'padding': '10px', 'marginLeft': '20px'}}>
         <input type='submit'></input>
