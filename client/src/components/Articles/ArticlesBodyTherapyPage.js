@@ -17,6 +17,7 @@ const ArticlesBodyTherapyPage = () => {
 
         services.getAllBodyTherapy()
         .then((result) => setBodyTherapies(result))
+        .catch(err => alert(err.message))
       }, 1000)
        
    

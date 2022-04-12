@@ -13,6 +13,7 @@ const ArticlesFacePage = () => {
   useEffect(() => {
     services.getAllFaces()
       .then((result) => setFaceCares(result))
+      .catch(err => alert(err.message))
   }, []);
 
   return (

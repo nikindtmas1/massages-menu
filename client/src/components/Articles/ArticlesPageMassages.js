@@ -18,6 +18,7 @@ const ArticlesPageMassages = () => {
   useEffect(() => {
     services.getAll()
       .then((result) => setMassages(result))
+      .catch(err => alert(err.message))
   }, []);
 
   return (

@@ -16,6 +16,7 @@ const ArticlesPageWaxing = () => {
     useEffect(() => {
         services.getAllWaxing()
             .then((result) => setWaxTherapies(result))
+            .catch(err => alert(err.message))
     }, []);
 
     return (
