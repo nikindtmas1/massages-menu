@@ -1,4 +1,4 @@
-import { styled, alpha } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 import React, { useState, useContext } from "react";
 import { Link, useHistory } from "react-router-dom";
 
@@ -6,23 +6,23 @@ import * as service from '../Services/data';
 
 import AuthCxt from '../../contexts/AuthCxt';
 import SearchIcon from '@mui/icons-material/Search';
-import InputBase from '@mui/material/InputBase';
+//import InputBase from '@mui/material/InputBase';
 
 
-const Search = styled('div')(({ theme }) => ({
-  position: 'relative',
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
-  '&:hover': {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
-  },
-  marginLeft: 0,
-  width: '100%',
-  [theme.breakpoints.up('sm')]: {
-    marginLeft: theme.spacing(1),
-    width: 'auto',
-  },
-}));
+// const Search = styled('div')(({ theme }) => ({
+//   position: 'relative',
+//   borderRadius: theme.shape.borderRadius,
+//   backgroundColor: alpha(theme.palette.common.white, 0.15),
+//   '&:hover': {
+//     backgroundColor: alpha(theme.palette.common.white, 0.25),
+//   },
+//   marginLeft: 0,
+//   width: '100%',
+//   [theme.breakpoints.up('sm')]: {
+//     marginLeft: theme.spacing(1),
+//     width: 'auto',
+//   },
+// }));
 
 const SearchIconWrapper = styled('div')(({ theme }) => ({
   padding: theme.spacing(0, 2),
@@ -34,22 +34,22 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
   justifyContent: 'center',
 }));
 
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: 'inherit',
-  '& .MuiInputBase-input': {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-    transition: theme.transitions.create('width'),
-    width: '100%',
-    [theme.breakpoints.up('sm')]: {
-      width: '12ch',
-      '&:focus': {
-        width: '20ch',
-      },
-    },
-  },
-}));
+// const StyledInputBase = styled(InputBase)(({ theme }) => ({
+//   color: 'inherit',
+//   '& .MuiInputBase-input': {
+//     padding: theme.spacing(1, 1, 1, 0),
+//     // vertical padding + font size from searchIcon
+//     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+//     transition: theme.transitions.create('width'),
+//     width: '100%',
+//     [theme.breakpoints.up('sm')]: {
+//       width: '12ch',
+//       '&:focus': {
+//         width: '20ch',
+//       },
+//     },
+//   },
+// }));
 
 const Navigation = () => {
 
@@ -187,15 +187,7 @@ const Navigation = () => {
         <input type='submit'></input>
         </div>
       </form>
-      {/* <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Find by type"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search> */}
+
       </li>
     <li >
       <Link className={isActive ? 'active' : ''}
@@ -224,7 +216,25 @@ const Navigation = () => {
   let userNav = (
     <>
     <ul className="menu">
-    <li style={{'padding':'30px'}}>
+
+    <li style={{'paddingTop':'30px', 'paddingRight': '20px'}}>
+           <SearchIconWrapper>
+              <SearchIcon />
+            </SearchIconWrapper>
+      </li>
+            
+    <li style={{'paddingTop':'30px', 'paddingLeft': '20px', 'paddingRight': '8px'}}>
+      <form onSubmit={onSubmit} method='get' action=''>
+        <div>
+        <input name="massages" type="text" className="" id="input" placeholder="Find by type"></input>
+        </div>
+        <div style={{'padding': '10px', 'marginLeft': '40px'}}>
+        <input type='submit'></input>
+        </div>
+      </form>
+
+      </li>
+    {/* <li style={{'padding':'30px'}}>
       <Search>
             <SearchIconWrapper>
               <SearchIcon />
@@ -234,7 +244,7 @@ const Navigation = () => {
               inputProps={{ 'aria-label': 'search' }}
             />
           </Search>
-      </li>
+      </li> */}
     <li  >
       <Link id="one"  className={isActive ? 'active' : ''}
       onClick={toggleClass}  to="/" >About us</Link>
