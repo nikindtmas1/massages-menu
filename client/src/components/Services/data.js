@@ -1,7 +1,8 @@
 import * as service from '../Services/massagesService';
 
-const host = 'http://localhost:5000';
+//const host = 'http://localhost:5000';
 //const host = 'https://server-massages.herokuapp.com';
+const host = 'https://massages-menu-server.onrender.com'
 service.settings.host = host;
 
 export const login = service.login;
